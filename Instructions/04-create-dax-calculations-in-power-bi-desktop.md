@@ -1,7 +1,5 @@
 # **PL-300 Module 4: Create DAX Calculations in Power BI Desktop, Part 1**
 
-**The estimated time to complete the lab is 45 minutes**
-
 In this lab you will create calculated tables, calculated columns, and simple measures using Data Analysis Expressions (DAX).
 
 In this lab you learn how to:
@@ -35,6 +33,12 @@ This lab is one of many in a series of labs that was designed as a complete stor
 10. Perform Data Analysis in Power BI Desktop
 
 11. Enforce Row-Level Security
+
+## Estimated timing: 90 minutes
+
+## Architecture Diagram
+
+![Picture 1](Linked_image_Files/Mod4-PL300.png)
 
 ## **Exercise 1: Create Calculated Tables**
 
@@ -559,12 +563,18 @@ In this task you will complete the lab.
 
 	*You’ll enhance the data model with more advanced calculations using DAX in the **Create DAX Calculations in Power BI Desktop, Part 2** lab.*
 
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+      
+### Review
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ In this lab, you have completed the following :
+- Get started with Power BI Desktop
+- Create different tables and columns
+- Create Measures
 
 **You have successfully completed the lab**
