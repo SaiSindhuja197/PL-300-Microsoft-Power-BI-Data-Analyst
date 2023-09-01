@@ -32,7 +32,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 11. Enforce Row-Level Security
 
-## Estimated timing: 90 minutes  
+## Estimated timing: 60 minutes  
 
 ## Architecture Diagram
 
