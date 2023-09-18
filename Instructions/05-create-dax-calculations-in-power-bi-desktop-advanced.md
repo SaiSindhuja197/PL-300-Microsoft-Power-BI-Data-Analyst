@@ -34,6 +34,11 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 10. Enforce Row-Level Security
 
+## Lab objectives
+In this lab, you will perform:
+- Use the CALCULATE() function to manipulate filter context
+- Use Time Intelligence functions
+
 ## Estimated timing: 60 minutes  
 
 ## Architecture Diagram
@@ -167,9 +172,9 @@ In this task you will create several measures with DAX expressions that use the 
 
     >**Note**: The CALCULATE() function is a powerful function used to manipulate the filter context. The first argument takes an expression or a measure (a measure is just a named expression). Subsequent arguments allow modifying the filter context.
 
-     >**Note**: The REMOVEFILTERS() function removes active filters. It can take either no arguments, or a table, a column, or multiple columns as its argument.
+    >**Note**: The REMOVEFILTERS() function removes active filters. It can take either no arguments, or a table, a column, or multiple columns as its argument.
 
-      >**Note**: In this formula, the measure evaluates the sum of the **Sales** column in a modified filter context, which removes any filters applied to the columns of the **Region** table.
+    >**Note**: In this formula, the measure evaluates the sum of the **Sales** column in a modified filter context, which removes any filters applied to the columns of the **Region** table.
 
 2. Add the **Sales All Region** measure to the matrix visual.
 
@@ -259,9 +264,9 @@ In this task you will create several measures with DAX expressions that use the 
 
     >**Note**: To achieve sales as a percentage of group, two filters can be applied to effectively remove the filters on two columns.
 
-16. Add the **Sales % Group** measure to the matrix visual.
+15. Add the **Sales % Group** measure to the matrix visual.
 
-17. To improve the readability of this measure in visual, overwrite the **Sales % Group** measure with this improved formula.
+16. To improve the readability of this measure in visual, overwrite the **Sales % Group** measure with this improved formula.
 
     ```
     Sales % Group =
@@ -278,13 +283,13 @@ In this task you will create several measures with DAX expressions that use the 
       ```
 
 
-18. Notice that the **Sales % Group** measure now only returns a value when a region or country is in scope.
+17. Notice that the **Sales % Group** measure now only returns a value when a region or country is in scope.
 
-19. In Model view, place the three new measures into a display folder named **Ratios**.
+18. In Model view, place the three new measures into a display folder named **Ratios**.
 
     ![Picture 56](images/rations.png)
 
-20. Save the Power BI Desktop file.
+19. Save the Power BI Desktop file.
 
     >**Note**: The measures added to the **Sales** table have modified filter context to achieve hierarchical navigation. Notice that the pattern to achieve the calculation of a subtotal requires removing some columns from the filter context, and to arrive at a grand total, all columns must be removed.
 
