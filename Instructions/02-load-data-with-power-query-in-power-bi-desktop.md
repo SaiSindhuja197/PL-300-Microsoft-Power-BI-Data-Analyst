@@ -257,7 +257,7 @@ In this task you will configure the **Salesperson** query.
 
 	![Picture 5638](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image26.png)
 
-	>**Note**: Important: It’s important that you do not proceed if your query does not produce the correct result—it won’t be possible to complete later labs. If the query columns or rows don’t match, refer back to the steps in this task to fix any problems.*
+	>**Note**: Important: It’s important that you do not proceed if your query does not produce the correct result—it won’t be possible to complete later labs. If the query columns or rows don’t match, refer back to the steps in this task to fix any problems.
 
 ### Task 3: Configure the SalespersonRegion query
 
@@ -285,7 +285,7 @@ In this task you will configure the **SalespersonRegion** query.
 
 In this task you will configure the **Product** query.
 
-**Important**: When detailed instructions have already been provided, the lab steps will now provide more concise instructions. If you need the detailed instructions, you can refer back to the steps of previous tasks.*
+**Important**: When detailed instructions have already been provided, the lab steps will now provide more concise instructions. If you need the detailed instructions, you can refer back to the steps of previous tasks.
 
 1. Select the **DimProduct** query.
 
@@ -382,8 +382,6 @@ In this task you will configure the **Reseller** query.
 5. In the **Business Type** column header, click the down-arrow, and then review the distinct column values, and notice the incorrect spelling of warehouse.
 
 	![Picture 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
-
-  
 
 6. Right-click the **Business Type** column header, and then select **Replace Values**.
 
