@@ -1,5 +1,6 @@
 # **PL-300 Module 8: Perform Data Analysis in Power BI Desktop**
 
+## Lab scenario
 In this lab you will create the **Sales Exploration** report.
 
 In this lab you learn how to:
@@ -8,9 +9,7 @@ In this lab you learn how to:
 
 - Use a visual to forecast values
 
-
-
-### **Lab story**
+### Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -34,21 +33,27 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 10. Enforce Row-Level Security
 
+## Lab objectives
+In this lab, you will perform:
+
+- Create animated scatter charts
+- Use a visual to forecast values
+  
 ## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
 
 ![Picture 1](Linked_image_Files/Mod8-PL300.png)
 
-## **Exercise 1: Create the Report**
+## Exercise 1: Create the Report
 
 In this exercise you will create the **Sales Exploration** report.
 
-### **Task 1: Get started – Sign in**
+### Task 1: Get started – Sign in
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-*Important: If you have already signed in to Power BI in a previous lab, continue from the next task.*
+**Important**: If you have already signed in to Power BI in a previous lab, continue from the next task.
 
 1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
 
@@ -79,9 +84,9 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Leave the Microsoft Edge browser window open.
 
-### **Task 2: Get started – Create a dataset**
+### Task 2: Get started – Create a dataset
 
-In this task, you'll set up the environment for the lab by creating a dataset. *If you've already published the dataset, please move to the next task.*
+In this task, you'll set up the environment for the lab by creating a dataset. If you've already published the dataset, please move to the next task.
 
 1. In the Microsoft Edge browser window, in the Power BI service, navigate to **My Workspace**.
 
@@ -93,13 +98,13 @@ In this task, you'll set up the environment for the lab by creating a dataset. *
 
 5. If prompted to replace the dataset, click **Replace it**.
 
-### **Task 3: Create the report**
+### Task 3: Create the report
 
 In this task you will create the **Sales Exploration** report.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
-	*Important: If you already have Power BI Desktop open (from a previous lab), close that instance.*
+	**Important**: If you already have Power BI Desktop open (from a previous lab), close that instance.
 
 	![Picture 14](Linked_image_Files/pl300-04.png)
 
@@ -146,11 +151,11 @@ In this task you will create the **Sales Exploration** report.
 	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-## **Exercise 2: Create a Scatter Chart**
+## Exercise 2: Create a Scatter Chart
 
 In this exercise you will create a scatter chart that can be animated.
 
-### **Task 1: Create an animated scatter chart**
+### Task 1: Create an animated scatter chart
 
 In this task you will create a scatter chart that can be animated.
 
@@ -182,7 +187,7 @@ In this task you will create a scatter chart that can be animated.
 
 	![Picture 39](Linked_image_Files/pl-300-ex-033.png)
 
-	*The chart can be animated when a field is added to the **Play Axis** well/area.*
+	>**Note**: The chart can be animated when a field is added to the **Play Axis** well/area.
 
 4. In the **Filters** pane, add the **Product \| Category** field to the **Filters On This Page** well/area.
 
@@ -196,9 +201,9 @@ In this task you will create a scatter chart that can be animated.
 
 7. Watch the entire animation cycle from **FY2018 Q1** to **FY2020 Q4**.
 
-	*The scatter chart allows understanding the measure values simultaneously: in this case, order quantity, sales revenue, and profit margin.*
+	>**Note**: The scatter chart allows understanding the measure values simultaneously: in this case, order quantity, sales revenue, and profit margin.
 
-	*Each bubble represents a reseller business type. Changes in the bubble size reflect increased or decreased order quantities. While horizontal movements represent increases/decreases in sales revenue, and vertical movements represent increases/decreases in profitability.*
+	>**Note**: Each bubble represents a reseller business type. Changes in the bubble size reflect increased or decreased order quantities. While horizontal movements represent increases/decreases in sales revenue, and vertical movements represent increases/decreases in profitability.
 
 8. When the animation stops, click one of the bubbles to reveal its tracking over time.
 
@@ -208,7 +213,7 @@ In this task you will create a scatter chart that can be animated.
 
 11. Save the Power BI Desktop file.
 
-## **Exercise 3: Create a Forecast**
+## Exercise 3: Create a Forecast
 
 In this exercise you will create a forecast to determine possible future sales revenue.
 
@@ -226,8 +231,6 @@ In this task you will create a forecast to determine possible future sales reven
 
 	![Picture 74](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image22.png)
 
-  
-
 3. Add the following fields to the visual wells/areas:
 
 	-X Axis: **Date | Date**
@@ -242,9 +245,7 @@ In this task you will create a forecast to determine possible future sales reven
 
 	![Picture 47](Linked_image_Files/pl300-21.png)
 
-	*When forecasting over a time line, you will need at least two cycles (years) of data to produce an accurate and stable forecast.*
-
-  
+	>**Note**: When forecasting over a time line, you will need at least two cycles (years) of data to produce an accurate and stable forecast.
 
 6. Add also the **Product \| Category** field to the **Filters On This Page** well/area, and filter by **Bikes**.
 
@@ -256,7 +257,7 @@ In this task you will create a forecast to determine possible future sales reven
 
 8. Expand the **Forecast** section.
 
-    *If the **Forecast** section is not available, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.*
+    >**Note**: If the **Forecast** section is not available, it’s probably because the visual hasn’t been correctly configured. Forecasting is only available when two conditions are met: the axis has a single field of type date, and there’s only one value field.
 
 9. Turn the **Forecast** option to **On**/ Click **Add**
 
@@ -273,16 +274,15 @@ In this task you will create a forecast to determine possible future sales reven
 
 12. In the line visual, notice that the forecast has extended one month beyond the history data.
 
-	*The gray area represents the confidence. The wider the confidence, the less stable—and therefore the less accurate—the forecast is likely to be.*
+	>**Note**: The gray area represents the confidence. The wider the confidence, the less stable—and therefore the less accurate—the forecast is likely to be.
 
-	*When you know the length of the cycle, in this case annual, you should enter the seasonality points. Sometimes it could be weekly (7), or monthly (30).*
+	>**Note**: When you know the length of the cycle, in this case annual, you should enter the seasonality points. Sometimes it could be weekly (7), or monthly (30).
 
 13. In the **Filters** pane, filter by **Clothing** only, and notice that it produces a different result.
 
 14. Save the Power BI Desktop file.
 
-
-### **Task 2: Finish up**
+### Task 2: Finish up
 
 In this task you will complete the lab.
 
@@ -296,12 +296,12 @@ In this task you will complete the lab.
 
 4.  Close Power BI Desktop.
 
-### Review
+## Review
  In this lab, you have completed the following :
 - Create the Report
 - Create a Scatter Chart
 - Create a Forecast
 
-**You have successfully completed the lab**
+## You have successfully completed the lab
 
  
