@@ -409,7 +409,7 @@ In this task you will complete the lab.
 ## Review
   
  In this lab, you have completed the following:
- -Measures with DAX expressions involving filter context manipulation 
- -Created a sales year-to-date (YTD) measure and sales year-over-year (YoY) growth measure
+ - Measures with DAX expressions involving filter context manipulation 
+ - Created a sales year-to-date (YTD) measure and sales year-over-year (YoY) growth measure
 
 ## You have successfully completed the lab
