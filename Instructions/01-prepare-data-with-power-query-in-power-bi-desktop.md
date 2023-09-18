@@ -1,5 +1,6 @@
-# **PL-300 Module 1: Prepare Data in Power BI Desktop**
+# PL-300 Module 1: Prepare Data in Power BI Desktop
 
+## Lab scenario 
 In this lab you commence the development of a Power BI Desktop solution for the Adventure Works company. It involves connecting to source data, previewing the data, and using data preview techniques to understand the characteristics and quality of the source data.
 
 In this lab you learn how to:
@@ -37,6 +38,11 @@ This lab is one of many in a series of labs that was designed as a complete stor
 10. Perform Data Analysis in Power BI Desktop
 
 11. Enforce Row-Level Security
+
+## Lab objectives
+- Set Power BI Desktop options
+- Connect and preview to source data
+- Use data preview techniques to better understand the data
 
 ## Estimated timing: 60 minutes    
 
@@ -114,21 +120,21 @@ In this task you will create queries based on SQL Server tables.
 
 	>**Note**: if Pop-up appears click on **Ok**.
 
-4. In the **Navigator** window, at the left, expand the **AdventureWorksDW2020** database.
+5. In the **Navigator** window, at the left, expand the **AdventureWorksDW2020** database.
 
 	> **Note**: The **AdventureWorksDW2020** database is based on the **AdventureWorksDW2017** sample database. It has been modified to support the learning objectives of the course labs.
 
 	![Picture 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(17).png)
 
-5. Select—but don’t check—the **DimEmployee** table.
+6. Select—but don’t check—the **DimEmployee** table.
 
 	![Picture 29](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(18).png)
 
-6. In the right pane, notice a preview of the table data.
+7. In the right pane, notice a preview of the table data.
 
 	> **Note**: The preview data allows you to determine the columns and a sample of rows.
 
-7. To create queries, select the checkbox next to the following six tables:
+8. To create queries, select the checkbox next to the following six tables:
 
 	- DimEmployee
 
@@ -142,7 +148,7 @@ In this task you will create queries based on SQL Server tables.
 
 	- FactResellerSales
 
-8. To apply transformations to the data of the selected tables, click **Transform Data**.
+9. To apply transformations to the data of the selected tables, click **Transform Data**.
 
 	>**Note**: You won’t be transforming the data in this lab. The objectives of this lab focus on exploring and profiling the data in the **Power Query Editor** window.
 
@@ -328,4 +334,4 @@ In this task you will complete the lab.
 - Preview Data in Power Query Editor
 - Get data from a CSV file
 
-**You have successfully completed the lab**
+## You have successfully completed the lab
