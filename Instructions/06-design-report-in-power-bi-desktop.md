@@ -33,6 +33,11 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 10. Enforce Row-Level Security
 
+## Lab objectives
+In this lab, you will perform:
+- Design a report
+- Configure visual fields and format properties
+  
 ## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
