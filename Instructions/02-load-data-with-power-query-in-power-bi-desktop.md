@@ -18,20 +18,19 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
+4. Create DAX Calculations in Power BI Desktop, Part 1
 
-5. Create DAX Calculations in Power BI Desktop, Part 1
+5. Create DAX Calculations in Power BI Desktop, Part 2
 
-6. Create DAX Calculations in Power BI Desktop, Part 2
+6. Design a Report in Power BI Desktop, Part 1
 
-7. Design a Report in Power BI Desktop, Part 1
+7. Design a Report in Power BI Desktop, Part 2
 
-8. Design a Report in Power BI Desktop, Part 2
+8. Create a Power BI Dashboard
 
-9. Create a Power BI Dashboard
+8. Perform Data Analysis in Power BI Desktop
 
-10. Perform Data Analysis in Power BI Desktop
-
-11. Enforce Row-Level Security
+10. Enforce Row-Level Security
 
 ## Lab objectives
 In this lab, you will perform:
@@ -44,15 +43,15 @@ In this lab, you will perform:
 
   ![Picture 8](Linked_image_Files/Mod2-PL300.png)
 
-## **Exercise 1: Load Data**
+## Exercise 1: Load Data
 
 In this exercise you will apply transformations to each of the queries created in the previous lab.
 
-### **Task 1: Get started**
+### Task 1: Get started
 
 In this task you will setup the environment for the lab.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -147,7 +146,7 @@ In this task you will setup the environment for the lab.
    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
    
 
-### **Task 2: Configure the Salesperson query**
+### Task 2: Configure the Salesperson query
 
 In this task you will configure the **Salesperson** query.
 
@@ -259,7 +258,7 @@ In this task you will configure the **Salesperson** query.
 
 	>**Note**: Important: It’s important that you do not proceed if your query does not produce the correct result—it won’t be possible to complete later labs. If the query columns or rows don’t match, refer back to the steps in this task to fix any problems.*
 
-### **Task 3: Configure the SalespersonRegion query**
+### Task 3: Configure the SalespersonRegion query
 
 In this task you will configure the **SalespersonRegion** query.
 
@@ -281,11 +280,11 @@ In this task you will configure the **SalespersonRegion** query.
 
 	![Picture 5641](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image29.png)
 
-### **Task 4: Configure the Product query**
+### Task 4: Configure the Product query
 
 In this task you will configure the **Product** query.
 
->**Note**: Important: When detailed instructions have already been provided, the lab steps will now provide more concise instructions. If you need the detailed instructions, you can refer back to the steps of previous tasks.*
+**Important**: When detailed instructions have already been provided, the lab steps will now provide more concise instructions. If you need the detailed instructions, you can refer back to the steps of previous tasks.*
 
 1. Select the **DimProduct** query.
 
@@ -319,13 +318,13 @@ In this task you will configure the **Product** query.
 
 	![Picture 5646](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image32.png)
 
-	>**Note**: By selecting these two columns, a transformation will be applied to join to the **DimProductSubcategory** table, and then include these columns. The **DimProductCategory** column is, in fact, another related table in the data source.*
+	>**Note**: By selecting these two columns, a transformation will be applied to join to the **DimProductSubcategory** table, and then include these columns. The **DimProductCategory** column is, in fact, another related table in the data source.
 
 9. Uncheck the **Use Original Column Name as Prefix** checkbox.
 
 	![Picture 5647](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image33.png)
 
-	>**Note**: Query column names must always be unique. If left checked, this checkbox would prefix each column with the expanded column name (in this case **DimProductSubcategory**). Because it’s known that the selected column names don’t collide with column names in the **Product** query, the option is deselected.*
+	>**Note**: Query column names must always be unique. If left checked, this checkbox would prefix each column with the expanded column name (in this case **DimProductSubcategory**). Because it’s known that the selected column names don’t collide with column names in the **Product** query, the option is deselected.
 
 10. Click **OK**.
 
@@ -415,7 +414,7 @@ In this task you will configure the **Reseller** query.
 
 	![Picture 5657](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image42.png)
 
-### **Task 6: Configure the Region query**
+### Task 6: Configure the Region query
 
 In this task you will configure the **Region** query.
 
@@ -451,7 +450,7 @@ In this task you will configure the **Region** query.
 
 	![Picture 5661](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image45.png)
 
-### **Task 7: Configure the Sales query**
+### Task 7: Configure the Sales query
 
 In this task you will configure the **Sales** query.
 
@@ -485,7 +484,7 @@ In this task you will configure the **Sales** query.
 
 	- DimProduct
 
-	>**Note**: You may recall in the **Prepare Data in Power BI Desktop** lab that a small percentage of **FactResellerSales** rows had missing **TotalProductCost** values. The **DimProduct** column has been included to retrieve the product standard cost column to assist fixing the missing values.*
+	>**Note**: You may recall in the **Prepare Data in Power BI Desktop** lab that a small percentage of **FactResellerSales** rows had missing **TotalProductCost** values. The **DimProduct** column has been included to retrieve the product standard cost column to assist fixing the missing values.
 
 4. Expand the **DimProduct** column, uncheck all columns, and then include only the **StandardCost** column.
 
@@ -504,9 +503,9 @@ In this task you will configure the **Sales** query.
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
    ```
 
-  >**Note**: This expression tests if the **TotalProductCost** value is missing. If it is, produces a value by multiplying the **OrderQuantity** value by the **StandardCost** value; otherwise, it uses the existing **TotalProductCost** value.*
+   >**Note**: This expression tests if the **TotalProductCost** value is missing. If it is, produces a value by multiplying the **OrderQuantity** value by the **StandardCost** value; otherwise, it uses the existing **TotalProductCost** value.
 
-  > **Note:** Alternatively, you can copy the expression from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** file.
+   > **Note:** Alternatively, you can copy the expression from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** file.
 
 8. Click **OK**.
 
@@ -530,7 +529,7 @@ In this task you will configure the **Sales** query.
 
 	![Picture 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
-	>**Note**: Configuring the correct data type is important. When the column contains numeric value, it’s also important to choose the correct type if you expect to perform mathematic calculations.*
+	>**Note**: Configuring the correct data type is important. When the column contains numeric value, it’s also important to choose the correct type if you expect to perform mathematic calculations.
 
 12. Modify the following three column data types to **Fixed Decimal Number**.
 
@@ -542,13 +541,13 @@ In this task you will configure the **Sales** query.
 
 	![Picture 5668](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image51.png)
 
-	>**Note**: The fixed decimal number data type allows for 19 digits, and allows for more precision to avoid rounding errors. It’s important to use the fixed decimal number type for financial values, or rates (like exchange rates).*
+	>**Note**: The fixed decimal number data type allows for 19 digits, and allows for more precision to avoid rounding errors. It’s important to use the fixed decimal number type for financial values, or rates (like exchange rates).
 
 13. In the status bar, verify that the query has 10 columns and 999+ rows.
 
 	![Picture 5669](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image52.png)
 
-	*A maximum of 1000 rows will be loaded as preview data for each query.*
+	>**Note**: A maximum of 1000 rows will be loaded as preview data for each query.
 
 ### **Task 8: Configure the Targets query**
 
@@ -572,7 +571,7 @@ In this task you will configure the **Targets** query.
 
 6. Apply a filter to the **Value** column to remove hyphen (-) values.
 
-	>**Note**: You may recall that the hyphen character was used in the source CSV file to represent zero (0).*
+	>**Note**: You may recall that the hyphen character was used in the source CSV file to represent zero (0).
 
 7. Rename the following two columns:
 
@@ -580,7 +579,7 @@ In this task you will configure the **Targets** query.
 
 	- **Value** to **Target**
 
-	>**Note**: You’ll now apply transformations to produce a date column. The date will be derived from the **Year** and **MonthNumber** columns. You’ll create the column by using the **Columns From Examples** feature.*
+	>**Note**: You’ll now apply transformations to produce a date column. The date will be derived from the **Year** and **MonthNumber** columns. You’ll create the column by using the **Columns From Examples** feature.
 
 8. To prepare the **MonthNumber** column values, right-click the **MonthNumber** column header, and then select **Replace Values**.
 
@@ -604,11 +603,11 @@ In this task you will configure the **Targets** query.
 
 14. In the **Column1** column, in the first grid cell, commence entering **7/1/2017**, and then press **Enter**.
 
-	>**Note**: The virtual machine uses US regional settings, so this date is in fact July 1, 2017.*
+	>**Note**: The virtual machine uses US regional settings, so this date is in fact July 1, 2017.
 
 15. Notice that the grid cells update with predicted values.
 
-	>**Note**: The feature has accurately predicted that you are combining values from the **Year** and **MonthNumber** columns.*
+	>**Note**: The feature has accurately predicted that you are combining values from the **Year** and **MonthNumber** columns.
 
 16. Notice also the formula presented above the query grid.
 
@@ -638,7 +637,7 @@ In this task you will configure the **Targets** query.
 
 22. To multiply the **Target** values by 1000, select the **Target** column header, and then on the **Transform** ribbon tab, from inside the **Number Column** group, click **Standard**, and then select **Multiply**.
 
-	>**Note**: You may recall that the target values were stored as thousands.*
+	>**Note**: You may recall that the target values were stored as thousands.
 
 	![Picture 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
 
@@ -654,7 +653,7 @@ In this task you will configure the **Targets** query.
 
 	![Picture 5685](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image66.png)
 
-### **Task 9: Configure the ColorFormats query**
+### Task 9: Configure the ColorFormats query
 
 In this task you will configure the **ColorFormats** query.
 
@@ -672,7 +671,7 @@ In this task you will configure the **ColorFormats** query.
 
 	![Picture 5689](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image69.png)
 
-### **Task 10: Update the Product query**
+### Task 10: Update the Product query
 
 In this task you will update the **Product** query by merging the **ColorFormats** query.
 
@@ -684,7 +683,7 @@ In this task you will update the **Product** query by merging the **ColorFormats
 
 	![Picture 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
-	>**Note**: Merging queries allows integrating data, in this case from different data sources (SQL Server and a CSV file).*
+	>**Note**: Merging queries allows integrating data, in this case from different data sources (SQL Server and a CSV file).
 
 3. In the **Merge** window, in the **Product** query grid, select the **Color** column header.
 
@@ -700,7 +699,7 @@ In this task you will update the **Product** query by merging the **ColorFormats
 
 	![Picture 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
-	>**Note**: Privacy levels can be configured for data source to determine whether data can be shared between sources. Setting each data source as **Organizational** allows them to share data, if necessary. Note that Private data sources can never be shared with other data sources. It doesn’t mean that Private data cannot be shared; it means that the Power Query engine cannot share data between the sources.*
+	>**Note**: Privacy levels can be configured for data source to determine whether data can be shared between sources. Setting each data source as **Organizational** allows them to share data, if necessary. Note that Private data sources can never be shared with other data sources. It doesn’t mean that Private data cannot be shared; it means that the Power Query engine cannot share data between the sources.
 
 7. Click **Save**.
 
@@ -722,7 +721,7 @@ In this task you will update the **Product** query by merging the **ColorFormats
 
 	![Picture 5695](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image78.png)
 
-### **Task 11: Update the ColorFormats query**
+### Task 11: Update the ColorFormats query
 
 In this task you will update the **ColorFormats** to disable its load.
 
@@ -738,13 +737,13 @@ In this task you will update the **ColorFormats** to disable its load.
 
 	![Picture 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-	Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the **Product** query, which is enabled to load to the data model.
+	>**Note**: Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the **Product** query, which is enabled to load to the data model.
 
 4. Click **OK**.
 
 	![Picture 324](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image82.png)
 
-### **Task 12: Finish up**
+### Task 12: Finish up
 
 In this task you will complete the lab.
 
@@ -770,7 +769,7 @@ In this task you will complete the lab.
 
 	![Picture 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-	*All load-enabled queries are now loaded to the data model.*
+	>**Note**: All load-enabled queries are now loaded to the data model.
 
 3. In the **Fields** pane (located at the right), notice the seven tables loaded to the data model.
 
