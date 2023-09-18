@@ -13,7 +13,7 @@ In this lab you learn how to:
 
 - Create and use bookmarks
 
-### Lab story
+## Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -139,52 +139,52 @@ In this task you will setup the environment for the lab by opening the starter r
        ![](Linked_image_Files/lab7-image3.png)
  
 
-5. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
+7. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
 
-6. Select **Open Report**.
+8. Select **Open Report**.
 
 	![Picture 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(3).png)
 
-7. Click **Browse Reports**.
+9. Click **Browse Reports**.
 
 	![Picture 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** folder.
+10. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** folder.
 
-9. Select the **Sales Analysis** file.
+11. Select the **Sales Analysis** file.
 
-10. Click **Open**.
+12. Click **Open**.
 
 	![Picture 5](Linked_image_Files/Lab7-image(9).png)
 
-11. Close any informational windows that may open.
+13. Close any informational windows that may open.
 
-12. Notice the yellow warning message beneath the ribbon.
+14. Notice the yellow warning message beneath the ribbon.
 
 	>**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
 
-13. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
+15. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
 	![Picture 8](Linked_image_Files/discard-changes-(1).png)
 
-14. Now you will see another pop up as shown below, select **Discard**.
+16. Now you will see another pop up as shown below, select **Discard**.
 
 	![Picture 8](Linked_image_Files/discard-changes-(2).png)
 
 
-15. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
+17. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
 
-16. Select **Save As**.
+18. Select **Save As**.
 
 	![Picture 4](Linked_image_Files/Lab7-image(10).png)
 
-17. If prompted to apply changes, click **Apply**.
+19. If prompted to apply changes, click **Apply**.
 
 	![Picture 3](Linked_image_Files/Lab7-image(11).png)
 
-18. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\MySolution** folder.
+20. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\MySolution** folder.
 
-19. Click **Save**.
+21. Click **Save**.
 
 	![Picture 2](Linked_image_Files/Lab7-image(12).png)
 
@@ -553,8 +553,9 @@ In this task you will complete the lab.
 
 2. Leave the Microsoft Edge browser window open.
 
-### Review
- In this lab, you have completed the following :
+## Review
+In this lab, you have completed the following :
+
 - Configure Sync Slicers
 - Configure Drill Through
 - Add Conditional Formatting
