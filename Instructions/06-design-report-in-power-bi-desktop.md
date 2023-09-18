@@ -1,5 +1,6 @@
-# **PL-300 Module 6: Design a Report in Power BI Desktop**
+# PL-300 Module 6: Design a Report in Power BI Desktop
 
+## Lab scenario
 In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
 
 In this lab you learn how to:
@@ -8,7 +9,7 @@ In this lab you learn how to:
 
 - Configure visual fields and format properties
 
-### **Lab story**
+### Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -18,35 +19,35 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
-5. Create DAX Calculations in Power BI Desktop
+4. Create DAX Calculations in Power BI Desktop
 
-6. Create Advanced  DAX Calculations in Power BI Desktop
+5. Create Advanced  DAX Calculations in Power BI Desktop
 
-7. **Design a Report in Power BI Desktop**
+6. **Design a Report in Power BI Desktop**
 
-8. Enhance a Report in Power BI Desktop
+7. Enhance a Report in Power BI Desktop
 
-9. Create a Power BI Dashboard
+8. Create a Power BI Dashboard
 
-10. Perform Data Analysis in Power BI Desktop
+9. Perform Data Analysis in Power BI Desktop
 
-11. Enforce Row-Level Security
+10. Enforce Row-Level Security
 
- ## Estimated timing: 60 minutes    
+## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
 
 ![Picture 1](Linked_image_Files/Mod6-PL300.png)   
 
-## **Exercise 1: Create a Report**
+## Exercise 1: Create a Report
 
 In this exercise you will create a three-page report named **Sales Report**.
 
-### **Task 1: Get started – Sign in**
+### Task 1: Get started – Sign in
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-*Important: If you have already signed in to Power BI, continue from the next task.*
+**Important**: If you have already signed in to Power BI, continue from the next task.
 
 1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
 
@@ -54,7 +55,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. In the Microsoft Edge browser window, navigate to **https://powerbi.microsoft.com**.
 
- 	*Tip: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.*
+ 	**Tip**: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
 
 1. Click **Sign In** (located at the top-right corner).
 
@@ -73,7 +74,7 @@ In this task you will setup the environment for the lab by signing in to Power B
  
 1. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
- 	*Important: Be sure to record your new password.*
+ 	**Important**: Be sure to record your new password.
 
 1. Complete the sign in process by clicking on **Continue**
 
@@ -85,16 +86,13 @@ In this task you will setup the environment for the lab by signing in to Power B
    
    ![](Linked_image_Files/lab6-image-(T003).png)
 
-
-
 1. If prompted by Microsoft Edge to stay signed in, click **Yes**.
 
 1. Leave the Microsoft Edge browser window open.
 
-### **Task 2: Get started – Enable Map and filled map visuals**
+### Task 2: Get started – Enable Map and filled map visuals
 
 In this task you will enable map and filled map visuals in the environment for the lab by updating the Integration settings in the Power BI Admin portal. 
-
 
 1. To open the Power BI Admin portal, at the top-right corner of the browser, click on the ellipses and then select the **Settings** icon.
 
@@ -120,11 +118,11 @@ In this task you will enable map and filled map visuals in the environment for t
 
 1. Leave the Microsoft Edge browser window open.
 
-### **Task 3: Get started – Open report**
+### Task 3: Get started – Open report
 
 In this task you will setup the environment for the lab by opening the starter report.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, click the Microsoft Power BI Desktop shortcut.
 
@@ -189,7 +187,7 @@ In this task you will setup the environment for the lab by opening the starter r
 	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 4: Design page 1**
+### Task 4: Design page 1
 
 In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
 
@@ -222,7 +220,7 @@ In this task you will design the first report page. When you’ve completed the 
 7. To add a slicer, first de-select the image by clicking an empty area of the report page.
 8. In the **Fields** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
 	
-	*The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.*
+	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.
 
 9. Notice that a table of year values has been added to the report page.
 
@@ -242,7 +240,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 	![Picture 20](Linked_image_Files/image(21).png)
 
-	*The report page is now filtered by year **FY2020**.*
+	>**Note**: The report page is now filtered by year **FY2020**.
 
 14. De-select the slicer by clicking an empty area of the report page.
 
@@ -273,7 +271,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 	![Picture 27](Linked_image_Files/image(28).png)
 
-	*By dragging fields into a visual, they will be added to default wells/areas. For precision, you can drag fields directly into the wells/areas, as you will do next.*
+	>**Note**: By dragging fields into a visual, they will be added to default wells/areas. For precision, you can drag fields directly into the wells/areas, as you will do next.
 
 26. From the **Data** pane, drag the **Sales \| Profit Margin** field into the **Line y-axis** well/area.
 
@@ -281,7 +279,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 27. Notice that the visual has 11 months only.
 
-	*The last month of the year, 2020 June, does not have any sales (yet). By default, the visual has eliminated months with BLANK sales. You will now configure the visual to show all months.*
+	>**Note**: The last month of the year, 2020 June, does not have any sales (yet). By default, the visual has eliminated months with BLANK sales. You will now configure the visual to show all months.
 
 28. In the visual fields pane, in the **X-axis** well/area, for the **Month** field, click the down-arrow, and then select **Show Items With No Data**.
 
@@ -335,15 +333,15 @@ In this task you will design the first report page. When you’ve completed the 
 
 41. Save the Power BI Desktop file.
 
-	*The design of the first page is now complete.*
-
-### **Task 5: Design page 2**
+	>**Note**: The design of the first page is now complete.
+ 
+### Task 5: Design page 2
 
 In this task you will design the second report page. When you’ve completed the design, the page will look like the following:
 
 ![Image of page 2, comprising a slicer and matrix.](Linked_image_Files/image(37).png)
 
-*Important: When detailed instructions have already been provided in the labs, the lab steps will provide more concise instructions. If you need the detailed instructions, you can refer back to other tasks in this lab.*
+**Important**: When detailed instructions have already been provided in the labs, the lab steps will provide more concise instructions. If you need the detailed instructions, you can refer back to other tasks in this lab.
 
 1. To create a new page, at the bottom-left, click the plus icon.
 
@@ -397,7 +395,7 @@ In this task you will design the second report page. When you’ve completed the
 
 	![Picture 58](Linked_image_Files/image(45).png)
 
-	*Fields added to the **Filters** pane can achieve the same result as a slicer. One difference is they don’t take up space on the report page. Another difference is that they can be configured to achieve more sophisticated filtering requirements.*
+	>**Note**: Fields added to the **Filters** pane can achieve the same result as a slicer. One difference is they don’t take up space on the report page. Another difference is that they can be configured to achieve more sophisticated filtering requirements.
 
 12. Add each of the following **Product** table fields to the **Filter On This Page** well/area, collapsing each, directly beneath the **Category** card:
 
@@ -411,9 +409,9 @@ In this task you will design the second report page. When you’ve completed the
 
 13. Save the Power BI Desktop file.
 
-	*The design of the second page is now complete.*
+	>**Note**: The design of the second page is now complete.
 
-### **Task 6: Design page 3**
+### Task 6: Design page 3
 
 In this task you will design the third—and final—report page. When you’ve completed the design, the page will look like the following:
 
@@ -487,15 +485,15 @@ In this task you will design the third—and final—report page. When you’ve 
 
 	![Picture 61](Linked_image_Files/image(58).png)
 
-	*It’s now possible to see the same data expressed by two different visualization types. This isn’t a good use of the page layout, however, you’ll improve it in the **Enhance a Report in Power BI Desktop** lab by superimposing the visuals. By adding buttons to the page, you’ll allow the report user to determine which of the two visuals is visible.*
+	>**Note**: It’s now possible to see the same data expressed by two different visualization types. This isn’t a good use of the page layout, however, you’ll improve it in the **Enhance a Report in Power BI Desktop** lab by superimposing the visuals. By adding buttons to the page, you’ll allow the report user to determine which of the two visuals is visible.
 
-	*The design of the third—and final—page is now complete.*
+	>**Note**: The design of the third—and final—page is now complete.
 	
-## **Exercise 2: Explore the Report**
+## Exercise 2: Explore the Report
 
 In this exercise you will explore the report that was published to Power BI.
 
-### **Task 1: Publish the report**
+### Task 1: Publish the report
 
 In this task you will publish the report.
 
@@ -519,9 +517,9 @@ In this task you will publish the report.
 
 7. Leave Power BI Desktop open.
 
-	*You’ll explore the report in the Power BI service in the next exercise.*
+	>**Note**: You’ll explore the report in the Power BI service in the next exercise.
 
-### **Task 2: Explore the report**
+### Task 2: Explore the report
 
 In this task you will explore the report that was published to Power BI.
 
@@ -529,9 +527,9 @@ In this task you will explore the report that was published to Power BI.
 
 2. Review the contents of the workspace, noticing the **Sales Analysis** report and dataset.
 
-	*When you published the Power BI Desktop file, the data model was published as a dataset.*
+	>**Note**: When you published the Power BI Desktop file, the data model was published as a dataset.
 
-	*If you don’t see it, press **F5** to reload the browser, and then expand the workspace again.*
+	>**Note**: If you don’t see it, press **F5** to reload the browser, and then expand the workspace again.
 
 	![Picture 94](Linked_image_Files/workspace-2.png)
 
@@ -545,7 +543,7 @@ In this task you will explore the report that was published to Power BI.
 
 7. While pressing the **Ctrl** key, select an additional month.
 
-	*By default, cross filtering filters all other visuals on the page.*
+	>**Note**: By default, cross filtering filters all other visuals on the page.
 
 8. Notice that the bar chart is filtered and highlighted, with the bold portion of the bars representing the filtered months.
 
@@ -553,7 +551,7 @@ In this task you will explore the report that was published to Power BI.
 
 	![Picture 95](images/M6-Ex2-T2-S9.png)
 
-	*The filter icon allows you to understand all filters that are applied to the visual, including slicers and cross filters from other visual.*
+	>**Note**: The filter icon allows you to understand all filters that are applied to the visual, including slicers and cross filters from other visual.
 
 10. Hover the cursor over a bar, and then notice the tooltip information.
 
@@ -563,7 +561,7 @@ In this task you will explore the report that was published to Power BI.
 
 	![Picture 96](images/M6-Ex2-T2-S12.png)
 
-	*Focus mode zooms the visual to full page size.*
+	>**Note**: Focus mode zooms the visual to full page size.
 
 13. Hover the cursor over different segments of the bar charts to reveal tooltips.
 
@@ -583,11 +581,11 @@ In this task you will explore the report that was published to Power BI.
 
 18. Notice that the **Region** slicer has a different selection to the **Region** slicer on the **Overview** page.
 
-	*The slicers are not synchronized. You’ll modify the report design to ensure they sync between pages in the **Enhance a Report in Power BI Desktop** lab.*
+	>**Note**: The slicers are not synchronized. You’ll modify the report design to ensure they sync between pages in the **Enhance a Report in Power BI Desktop** lab.
 
 19. In the **Filters** pane (located at the right), expand a filter card, and apply some filters.
 
-	*The **Filters** pane allows you to define more filters than could possibly fit on a page as slicers.*
+	>**Note**: The **Filters** pane allows you to define more filters than could possibly fit on a page as slicers.
 
 20. In the matrix visual, use the plus (+) button to drill into the **Fiscal** hierarchy.
 
@@ -614,7 +612,7 @@ In this task you will explore the report that was published to Power BI.
     - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 2: Finish up**
+### Task 2: Finish up
 
 In this task you will complete the lab.
 
@@ -624,14 +622,14 @@ In this task you will complete the lab.
 
 2. Leave the Microsoft Edge browser window open.
 
-	*You will enhance the report design with advanced features in the **Enhance a Report in Power BI Desktop** lab.*
+   >**Note**: You will enhance the report design with advanced features in the **Enhance a Report in Power BI Desktop** lab.
   
-### Review
+## Review
  In this lab, you have completed the following :
 - Get started – Sign in
 - Enable Map and filled map visuals
 - Design page 1,2 and 3
 - Publish and explore the Report
 
-**You have successfully completed the lab**
+## You have successfully completed the lab
 
