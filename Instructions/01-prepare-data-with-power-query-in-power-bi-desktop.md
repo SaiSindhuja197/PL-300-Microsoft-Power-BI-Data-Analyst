@@ -15,7 +15,7 @@ In this lab you learn how to:
 
 - Use data preview techniques to better understand the data
 
-## **Lab story**
+## Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -50,18 +50,18 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ![Picture 1](Linked_image_Files/Mod1-PL300.png)
    
-## **Exercise 1: Prepare Data**
+## Exercise 1: Prepare Data
 
 In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
 
-### **Task 1: Get started with Power BI Desktop**
+### Task 1: Get started with Power BI Desktop
 
 In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
 - Data Load > Import relationships from data sources on first load
 - Data Load > Autodetect new relationships after data is loaded
 
-> **Note**: While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you're adding each one.*
+> **Note**: While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you're adding each one.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -98,7 +98,7 @@ In this task, you start by opening a starter Power BI file (.pbix). The starter 
 	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 2: Get data from SQL Server**
+### Task 2: Get data from SQL Server
 
 In this task you will create queries based on SQL Server tables.
 
