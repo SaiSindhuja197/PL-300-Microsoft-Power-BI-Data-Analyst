@@ -36,6 +36,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## Lab objectives
 In this lab, you will perform:
+
 - Pin visuals to a dashboard
 - Use Q&A to create dashboard tiles
 
@@ -63,7 +64,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 2. In the Microsoft Edge browser window, navigate to **https://powerbi.microsoft.com**.
 
-    *Tip: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.*
+    **Tip**: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
 
 3. Click **Sign In** (located at the top-right corner).
 
@@ -203,97 +204,97 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
     >**Note**: When pinning visuals to a dashboard, they will use the current filter context. Once pinned, the filter context cannot be changed. For time-based filters, it’s a better idea to use a relative date slicer (or, Q&A using a relative time-based question).
 
-4. To create a dashboard and pin a visual, hover the cursor over the S**ales and Profit Margin by Month** (column/line) visual, and select the **pushpin**.
+4. To create a dashboard and pin a visual, hover the cursor over the **Sales and Profit Margin by Month** (column/line) visual, and select the **pushpin**.
 
     ![Picture 43](Linked_image_Files/module9image21.png)
 
-6. In the **Pin to Dashboard** window, in the **Dashboard Name** box, enter **Sales Monitoring**.
+5. In the **Pin to Dashboard** window, in the **Dashboard Name** box, enter **Sales Monitoring**.
 
     ![Picture 3](Linked_image_Files/module09dashboard.png)
 
-7. Click **Pin**.
+6. Click **Pin**.
 
     ![Picture 1](Linked_image_Files/module09pin.png)
 
-8. On the **Navigation** pane, select **My Workspace** and then open the **Sales Monitoring** dashboard.
+7. On the **Navigation** pane, select **My Workspace** and then open the **Sales Monitoring** dashboard.
 
     ![Picture 44](Linked_image_Files/upd-mod8.png)
 
-9. Notice that the dashboard has a single tile.
+8. Notice that the dashboard has a single tile.
 
     ![Picture 45](Linked_image_Files/module09askquery.png)
 
-10. To add a tile based on a question, at the top-left of the dashboard, click **Ask a Question About Your Data**.
+9. To add a tile based on a question, at the top-left of the dashboard, click **Ask a Question About Your Data**.
 
     ![Picture 7](Linked_image_Files/module-09query2.png)
 
     >**Note**: You can use the Q&A feature to ask a question, and Power BI will respond will a visual.
 
-11. Click any one of the suggested questions beneath the Q&A box, in the boxes.
+10. Click any one of the suggested questions beneath the Q&A box, in the boxes.
 
-12. Review the response.
+11. Review the response.
 
-13. Remove all text from the Q&A box.
+12. Remove all text from the Q&A box.
 
-14. In the Q&A box, enter the following: **Sales YTD**
+13. In the Q&A box, enter the following: **Sales YTD**
 
     ![Picture 11](Linked_image_Files/module-09-25.png)
 
-15. Notice the response of **(Blank)**.
+14. Notice the response of **(Blank)**.
 
     ![Picture 14](Linked_image_Files/blank.png)
 
     >**Note**: You may recall you added the **Sales YTD** measure in the **Create DAX Calculations in Power BI Desktop, Part 2** lab. This measure is a Time Intelligence expression and it so requires a filter on the **Date** table to produce a result.
 
-16. Extend the question with: **in year FY2020**.
+15. Extend the question with: **in year FY2020**.
 
     ![Picture 12](Linked_image_Files/module09image-26.png)
 
-17. Notice the response is now **$33M**.
+16. Notice the response is now **$33M**.
 
      ![Picture 13](Linked_image_Files/33M.png)
 
      > **Note:** You might get the different value in response.
 
-19. To pin the response to the dashboard, at the top-right corner, click **Pin Visual**.
+17. To pin the response to the dashboard, at the top-right corner, click **Pin Visual**.
 
     ![Picture 15](Linked_image_Files/module09pinvisual.png)
 
-20. When prompted to pin the tile to the dashboard, click **Pin**.
+18. When prompted to pin the tile to the dashboard, click **Pin**.
 
     ![Picture 17](Linked_image_Files/module09pintodasboard.png)
 
-21. To return to the dashboard, at the top-left corner, click **Exit Q&amp;A**.
+19. To return to the dashboard, at the top-left corner, click **Exit Q&amp;A**.
 
     ![Picture 16](Linked_image_Files/module09exitQA.png)
 
-22. To add the company logo, on the menu bar, click **Edit**, and then select **Add a Tile**.
+20. To add the company logo, on the menu bar, click **Edit**, and then select **Add a Tile**.
 
     ![Picture 46](Linked_image_Files/module19image20.png)
 
     >**Note**: Using this technique to add a dashboard tile lets you embellish your dashboard with media, including web content, images, richly-formatted text boxes, and video (using YouTube or Vimeo links).
 
-23. In the **Add a Tile** pane (located at the right), select the **Image** tile.
+21. In the **Add a Tile** pane (located at the right), select the **Image** tile.
 
     ![Picture 47](Linked_image_Files/image.png)
 
-24. Click **Next**.
+22. Click **Next**.
 
     ![Picture 48](Linked_image_Files/09-create-power-bi-dashboard_image33.png)
 
-25. In the **Add Image Tile** pane, in the **URL** box, enter the complete URL found in the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** file.
+23. In the **Add Image Tile** pane, in the **URL** box, enter the complete URL found in the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** file.
 
     >**Note**: You can embed an image by using its URL, or you can use a data URL, which embeds content inline.
 
-26. At the bottom of the pane, click **Apply**.
+24. At the bottom of the pane, click **Apply**.
 
     ![Picture 49](Linked_image_Files/apply.png)
 
-27. To resize the logo tile, drag the bottom-right corner, and resize the tile to become one unit wide, and two units high.
+25. To resize the logo tile, drag the bottom-right corner, and resize the tile to become one unit wide, and two units high.
 
     >**Note**: Tile sizes are constrained into a rectangular shape. It’s only possible to resize into multiples of the rectangular shape.
 
-28. Organize the tiles so that the logo appears at the top-left, with the **Sales YTD** tile beneath it, and the **Sales, Profit Margin** tile at the right.
+26. Organize the tiles so that the logo appears at the top-left, with the **Sales YTD** tile beneath it, and the **Sales, Profit Margin** tile at the right.
 
     ![Picture 52](Linked_image_Files/module09-26.png)
 
@@ -357,7 +358,7 @@ In this task you will run a PowerShell script to update data in the **AdventureW
 
     >**Note**: The **AdventureWorksDW2020** database now includes sales orders made in June 2020.
 
-### **Task 2: Refresh the Power BI Desktop file**
+### Task 2: Refresh the Power BI Desktop file
 
 In this task you will open the **Sales Analysis** Power BI Desktop file, perform a data refresh, and then upload the file to your **Sales Analysis** workspace.
 
@@ -379,11 +380,11 @@ In this task you will open the **Sales Analysis** Power BI Desktop file, perform
 
 5. Close Power BI Desktop.
 
-## **Exercise 3: Review the Dashboard**
+## Exercise 3: Review the Dashboard
 
 In this exercise you will review the dashboard to notice updated sales.
 
-### **Task 1: Review the dashboard**
+### Task 1: Review the dashboard
 
 In this task you will review the dashboard to notice updated sales.
 
