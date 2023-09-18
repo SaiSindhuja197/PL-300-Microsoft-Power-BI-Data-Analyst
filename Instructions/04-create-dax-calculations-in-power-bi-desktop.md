@@ -578,4 +578,4 @@ In this task you will complete the lab.
 - Create different tables and columns
 - Create Measures
 
-## You have successfully completed the lab.
+## You have successfully completed the lab
