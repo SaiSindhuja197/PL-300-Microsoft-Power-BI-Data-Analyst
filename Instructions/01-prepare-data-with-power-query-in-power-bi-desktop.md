@@ -154,7 +154,7 @@ In this task you will create queries based on SQL Server tables.
 
 	![Picture 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(19).png)
 
-### **Task 3: Preview Data in Power Query Editor**
+### Task 3: Preview Data in Power Query Editor
 
 In this task you will preview the data of the SQL Server queries. First, you will learn relevant information about the data. You will also use column quality, column distribution, and column profile tools to understand the data and to assess data quality.
 
@@ -262,7 +262,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
 	> **Note**: Missing **TotalProductCost** column values is a data quality issue. To address the issue, in the **Load Data in Power BI Desktop** lab, you’ll apply transformations to fill in missing values by using the product standard cost, which is stored in the related **DimProduct** table.
 
-### **Task 4: Get data from a CSV file**
+### Task 4: Get data from a CSV file
 
 In this task you will create a query based on a CSV file.
 
@@ -299,7 +299,7 @@ In this task you will create a query based on a CSV file.
 
 	> **Note**: You’ll apply many transformations to achieve a different shaped result consisting of only three columns: **Date**, **EmployeeKey**, and **TargetAmount** in the **Load Data in Power BI Desktop** lab.
 
-### **Task 5: Finish up**
+### Task 5: Finish up
 
 In this task you will complete the lab.
 
