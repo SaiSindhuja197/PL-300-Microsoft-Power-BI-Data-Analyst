@@ -782,6 +782,7 @@ In this task you will complete the lab.
 
 ### Review
 In this lab, you have completed:
+
 - Configured the different queries in Power BI  Desktop.
 
 ## You have successfully completed the lab
