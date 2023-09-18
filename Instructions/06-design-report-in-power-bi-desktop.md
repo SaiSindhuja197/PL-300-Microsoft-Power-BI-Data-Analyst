@@ -35,6 +35,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## Lab objectives
 In this lab, you will perform:
+
 - Design a report
 - Configure visual fields and format properties
   
@@ -204,105 +205,105 @@ In this task you will design the first report page. When you’ve completed the 
 
 	*Tip: You can also double-click the page name to rename it.*
 
-2. Rename the page as **Overview**, and then press **Enter**.
+1. Rename the page as **Overview**, and then press **Enter**.
 
 	![Picture 37](Linked_image_Files/overview.png)
 
-3. To add an image, on the **Insert** ribbon tab, from inside the **Elements** group, click **Image**.
+1. To add an image, on the **Insert** ribbon tab, from inside the **Elements** group, click **Image**.
 
 	![Picture 1](Linked_image_Files/image(15).png)
 
-4. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Resources** folder.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Resources** folder.
 
-5. Select the **AdventureWorksLogo.jpg** file, and then click **Open**.
+1. Select the **AdventureWorksLogo.jpg** file, and then click **Open**.
 
 	![Picture 11](Linked_image_Files/image(16).png)
 
-6. Drag the image to position it at the top-left corner, and also drag the guide markers to resize it.
+1. Drag the image to position it at the top-left corner, and also drag the guide markers to resize it.
 
 	![Picture 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
 
-7. To add a slicer, first de-select the image by clicking an empty area of the report page.
-8. In the **Fields** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
+1. To add a slicer, first de-select the image by clicking an empty area of the report page.
+1. In the **Fields** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
 	
 	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.
 
-9. Notice that a table of year values has been added to the report page.
+1. Notice that a table of year values has been added to the report page.
 
-10. To convert the visual from a table to a slicer, in the **Visualizations** pane, select the **Slicer**.
+1. To convert the visual from a table to a slicer, in the **Visualizations** pane, select the **Slicer**.
 
 	![Picture 49](Linked_image_Files/image(18).png)
 
-11. To convert the slicer from a list to a dropdown, navigate to Visualizations > Format visual > Visual > Slicer Settings > Style, and then select Dropdown from the dropdown menu.
+1. To convert the slicer from a list to a dropdown, navigate to Visualizations > Format visual > Visual > Slicer Settings > Style, and then select Dropdown from the dropdown menu.
 
 	![Picture 18](Linked_image_Files/06_slicer_style-1.png)
 
-12. Resize and position the slicer so it sits beneath the image and is the same width as the image.
+1. Resize and position the slicer so it sits beneath the image and is the same width as the image.
 
 	![Picture 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
-13. In the **Year** slicer, open the dropdown list, select **FY2020**, and then collapse the dropdown list.
+1. In the **Year** slicer, open the dropdown list, select **FY2020**, and then collapse the dropdown list.
 
 	![Picture 20](Linked_image_Files/image(21).png)
 
 	>**Note**: The report page is now filtered by year **FY2020**.
 
-14. De-select the slicer by clicking an empty area of the report page.
+1. De-select the slicer by clicking an empty area of the report page.
 
-15. Create a second slicer, based on the **Region \| Region** field (not the **Region** level of the hierarch).
+1. Create a second slicer, based on the **Region \| Region** field (not the **Region** level of the hierarch).
 
-16. Leave the slicer as a list, and then resize and position the slicer beneath the **Year** slicer.
+1. Leave the slicer as a list, and then resize and position the slicer beneath the **Year** slicer.
 
 	![Picture 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
 
-21. De-select the slicer by clicking an empty area of the report page.
+1. De-select the slicer by clicking an empty area of the report page.
 
-22. To add a chart to the page, in the **Visualizations** pane, click the **Line and Stacked Column Chart** visual type.
+1. To add a chart to the page, in the **Visualizations** pane, click the **Line and Stacked Column Chart** visual type.
 
 	![Picture 51](Linked_image_Files/image(26).png)
 
-23. Resize and position the visual so it sits to the right of the logo, and so it fills the width of the report page.
+1. Resize and position the visual so it sits to the right of the logo, and so it fills the width of the report page.
 
 	![Picture 26](Linked_image_Files/07-design-report-in-power-bi-desktop_image27.png)
 
-24. Drag and drop the following fields into the visual:
+1. Drag and drop the following fields into the visual:
 
 	- Date \| Month
 
 	- Sales \| Sales
 
-25. In the visual fields pane (not the **Fields** pane—the visual fields pane is located beneath the **Visualizations** pane), notice that the fields are assigned to the **X-axis** and **Column y-axis** wells/areas.
+1. In the visual fields pane (not the **Fields** pane—the visual fields pane is located beneath the **Visualizations** pane), notice that the fields are assigned to the **X-axis** and **Column y-axis** wells/areas.
 
 	![Picture 27](Linked_image_Files/image(28).png)
 
 	>**Note**: By dragging fields into a visual, they will be added to default wells/areas. For precision, you can drag fields directly into the wells/areas, as you will do next.
 
-26. From the **Data** pane, drag the **Sales \| Profit Margin** field into the **Line y-axis** well/area.
+1. From the **Data** pane, drag the **Sales \| Profit Margin** field into the **Line y-axis** well/area.
 
 	![Picture 28](Linked_image_Files/image(29).png)
 
-27. Notice that the visual has 11 months only.
+1. Notice that the visual has 11 months only.
 
 	>**Note**: The last month of the year, 2020 June, does not have any sales (yet). By default, the visual has eliminated months with BLANK sales. You will now configure the visual to show all months.
 
-28. In the visual fields pane, in the **X-axis** well/area, for the **Month** field, click the down-arrow, and then select **Show Items With No Data**.
+1. In the visual fields pane, in the **X-axis** well/area, for the **Month** field, click the down-arrow, and then select **Show Items With No Data**.
 
 	![Picture 52](Linked_image_Files/image(30).png)
 
-29. Notice that the month **2020 June** now appears.
+1. Notice that the month **2020 June** now appears.
 
-30. De-select the chart by clicking an empty area of the report page.
+1. De-select the chart by clicking an empty area of the report page.
 
-31. To add a chart to the page, in the **Visualizations** pane, click the **Map** visual type.
+1. To add a chart to the page, in the **Visualizations** pane, click the **Map** visual type.
 
 	![Picture 53](Linked_image_Files/image(31).png)
 
-32. Resize and position the visual so it sits beneath the column/line chart, and so it fills half the width of the chart above.
+1. Resize and position the visual so it sits beneath the column/line chart, and so it fills half the width of the chart above.
 
 	![Picture 33](Linked_image_Files/07-design-report-in-power-bi-desktop_image32.png)
 
-33. Add the following fields to the visual wells/areas:
+1. Add the following fields to the visual wells/areas:
 
 	- Location: **Region \| Country**
 
@@ -310,33 +311,33 @@ In this task you will design the first report page. When you’ve completed the 
 
 	- Size: **Sales \| Sales**
 
-34. De-select the chart by clicking an empty area of the report page.
+1. De-select the chart by clicking an empty area of the report page.
 
-35. To add a chart to the page, in the **Visualizations** pane, click the **Stacked Bar Chart** visual type.
+1. To add a chart to the page, in the **Visualizations** pane, click the **Stacked Bar Chart** visual type.
 
 	![Picture 54](Linked_image_Files/image-(33).png)
 
-36. Resize and position the visual so it fills the remaining report page space.
+1. Resize and position the visual so it fills the remaining report page space.
 
 	![Picture 35](Linked_image_Files/07-design-report-in-power-bi-desktop_image34.png)
 
-37. Add the following fields to the visual wells/areas:
+1. Add the following fields to the visual wells/areas:
 
 	- Y-axis: **Product \| Category**
 
 	- X-axis: **Sales \| Quantity**
 
-38. To format the visual, open the **Format** pane.
+1. To format the visual, open the **Format** pane.
 
 	![Picture 3](Linked_image_Files/formatvisual.png)
 
-39. Expand the **Bars** and then the **Colors** group, and then set the **Default Color** property to a suitable color (to complement the column/line chart).
+1. Expand the **Bars** and then the **Colors** group, and then set the **Default Color** property to a suitable color (to complement the column/line chart).
 
-40. Set the **Data Labels** property to **On**.
+1. Set the **Data Labels** property to **On**.
 
 	![Picture 2](Linked_image_Files/image(36).png)
 
-41. Save the Power BI Desktop file.
+1. Save the Power BI Desktop file.
 
 	>**Note**: The design of the first page is now complete.
  
