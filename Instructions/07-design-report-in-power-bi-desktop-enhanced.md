@@ -1,5 +1,6 @@
 # **PL-300 Module 7: Enhance a Report in Power BI Desktop**
 
+## Lab scenario
 In this lab you will enhance the **Sales Analysis** with advanced design features.
 
 In this lab you learn how to:
@@ -12,7 +13,7 @@ In this lab you learn how to:
 
 - Create and use bookmarks
 
-### **Lab story**
+### Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -34,13 +35,19 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 10. Enforce Row-Level Security
 
+## Lab objectives
+- Sync slicers
+- Create a drill through page
+- Apply conditional formatting
+- Create and use bookmarks
+
 ## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
 
  ![Picture 1](Linked_image_Files/Mod7-PL300.png)
 
-## **Exercise 1: Configure Sync Slicers**
+## Exercise 1: Configure Sync Slicers
 
 In this exercise you will sync the report page slicers.
 
@@ -48,7 +55,7 @@ In this exercise you will sync the report page slicers.
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-*Important: If you have already signed in to Power BI, continue from the next task.*
+**Important**: If you have already signed in to Power BI, continue from the next task.
 
 1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
 
@@ -56,7 +63,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. In the Microsoft Edge browser window, navigate to **https://powerbi.microsoft.com**.
 
- 	*Tip: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.*
+ 	**Tip**: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
 
 1. Click **Sign In** (located at the top-right corner).
 
@@ -75,7 +82,7 @@ In this task you will setup the environment for the lab by signing in to Power B
  
 1. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
- 	*Important: Be sure to record your new password.*
+ 	**Important**: Be sure to record your new password.
 
 1. Complete the sign in process by clicking on **Continue**
 
@@ -99,7 +106,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 In this task you will setup the environment for the lab by opening the starter report.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -152,7 +159,7 @@ In this task you will setup the environment for the lab by opening the starter r
 
 12. Notice the yellow warning message beneath the ribbon.
 
-	*The message alerts you to the fact that the queries have not been applied to load as model tables.*
+	>**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
 
 13. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
@@ -186,17 +193,17 @@ In this task you will setup the environment for the lab by opening the starter r
        - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
        - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 3: Sync slicers**
+### Task 3: Sync slicers
 
 In this task you will sync the **Year** and **Region** slicers.
 
-*You will continue the development of the report created in the **Design a Report in Power BI Desktop** lab.*
+>**Note**: You will continue the development of the report created in the **Design a Report in Power BI Desktop** lab.
 
 1. In Power BI Desktop, on the **Overview** page, set the **Year** slicer to **FY2018**.
 
 2. Go to the **My Performance** page, and then notice that the **Year** slicer is a different value.
 
-	*When slicers aren’t synced it can contribute to misrepresentation of data and frustration for report users. You’ll now sync the report slicers.*
+	>**Note**: When slicers aren’t synced it can contribute to misrepresentation of data and frustration for report users. You’ll now sync the report slicers.
 
 3. Return to the **Overview** page, and then select the **Year** slicer.
 
@@ -220,13 +227,13 @@ In this task you will sync the **Year** and **Region** slicers.
 
 	![Picture 98](Linked_image_Files/Lab7-image(16).png)
 
-## **Exercise 2: Configure Drill Through**
+## Exercise 2: Configure Drill Through
 
 In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
 
 ![Image of the new page, comprising a card visual and table visual.](Linked_image_Files/Lab7-image(17).png)
 
-### **Task 1: Create a drill through page**
+### Task 1: Create a drill through page
 
 In this task you will create a new page and configure it as a drill through page.
 
@@ -238,11 +245,11 @@ In this task you will create a new page and configure it as a drill through page
 
 	![Picture 97](Linked_image_Files/Lab7-image(19).png)
 
-	*Report users won’t be able to go to the drill through page directly. They’ll need to access it from visuals on other pages. You’ll learn how to drill through to the page in the final exercise of this lab.*
+	>**Note**: Report users won’t be able to go to the drill through page directly. They’ll need to access it from visuals on other pages. You’ll learn how to drill through to the page in the final exercise of this lab.
 
 3. Beneath the **Visualizations** pane, in the **Drill Through** section, add the **Product \| Category** field to the **Add Drill-Through Fields Here** box.
 
-	*The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.*
+	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.
 
 	![Picture 96](Linked_image_Files/lab7-image(20).png)
 
@@ -254,7 +261,7 @@ In this task you will create a new page and configure it as a drill through page
 
 	![Picture 100](Linked_image_Files/Lab7-image(22).png)
 
-	*A button is added automatically when a field is added to the drill through well/area. It allows report users to navigate back to the page from which they drilled through.*
+	>**Note**: A button is added automatically when a field is added to the drill through well/area. It allows report users to navigate back to the page from which they drilled through.
 
 6. Add a **Card** visual to the page, and then resize and position it so it sits to the right of the button and fills the remaining width of the page.
 
@@ -296,15 +303,15 @@ In this task you will create a new page and configure it as a drill through page
 
     ![Picture 103](Linked_image_Files/textsize.png)
 
-	*The design of the drill through page is almost complete. You’ll enhance the page with conditional formatting in the next exercise.*
+	>**Note**: The design of the drill through page is almost complete. You’ll enhance the page with conditional formatting in the next exercise.
 
-## **Exercise 3: Add Conditional Formatting**
+## Exercise 3: Add Conditional Formatting
 
 In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
 
 ![Image of an updated page, revealing color formatted values and icons.](Linked_image_Files/Lab7-image(28).png)
 
-### **Task 1: Add conditional formatting**
+### Task 1: Add conditional formatting
 
 In this task you will enhance the drill through page with conditional formatting.
 
@@ -344,7 +351,7 @@ In this task you will enhance the drill through page with conditional formatting
 
 	![Picture 110](Linked_image_Files/Lab7-image(32).png)
 
-	*The rules can be interpreted as follows: display a red diamond if the profit margin value is less than 0; otherwise if the value is great or equal to zero, display a green circle.*
+	>**Note**: The rules can be interpreted as follows: display a red diamond if the profit margin value is less than 0; otherwise if the value is great or equal to zero, display a green circle.
 
 7. Click **OK**.
 
@@ -358,8 +365,6 @@ In this task you will enhance the drill through page with conditional formatting
 
 10. In the **Background Color – Color** window, in the **Format Style** dropdown list, select **Field Value**.
 
-	
-
 11. In the **What field should we base this on?** dropdown list, select **Product \| Formatting \| Background Color Format**.
 
 	![Picture 114](Linked_image_Files/Lab7-image(36).png)
@@ -370,15 +375,15 @@ In this task you will enhance the drill through page with conditional formatting
 
 13. Repeat the previous steps to configure font color conditional formatting for the **Color** field, using the **Product \| Formatting \| Font Color Format** field
 
-	*You may recall that the background and font colors were source from the **ColorFormats.csv** file in the **Prepare Data in Power BI Desktop** lab, and then integrated with the **Product** query in the **Load Data in Power BI Desktop** lab.*
+	>**Note**: You may recall that the background and font colors were source from the **ColorFormats.csv** file in the **Prepare Data in Power BI Desktop** lab, and then integrated with the **Product** query in the **Load Data in Power BI Desktop** lab.
 
-## **Exercise 4: Add Bookmarks and Buttons**
+## Exercise 4: Add Bookmarks and Buttons
 
 In this exercise you will enhance the **My Performance** page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
 
 ![Image of an updated page 3, showing two buttons and now just two visuals.](Linked_image_Files/Lab7-image(38).png)
 
-### **Task 1: Add bookmarks**
+### Task 1: Add bookmarks
 
 In this task you will add two bookmarks, one to display each of the monthly sales/targets visuals.
 
@@ -408,17 +413,17 @@ In this task you will add two bookmarks, one to display each of the monthly sale
 
 	![Picture 16](Linked_image_Files/Lab7-image43.png)
 
-	*Disabling the **Data** option means the bookmark won’t use the current filter state. That’s important because otherwise the bookmark would permanently lock in the filter currently applied by the **Year** slicer.*
+	>**Note**: Disabling the **Data** option means the bookmark won’t use the current filter state. That’s important because otherwise the bookmark would permanently lock in the filter currently applied by the **Year** slicer.
 
 9. To update the bookmark, click the ellipsis again, and then select **Update**.
 
 	![Picture 18](Linked_image_Files/Lab7-image(44).png)
 
-	*In the following steps, you’ll create and configure a second bookmark to show the second visual.*
+	>**Note**: In the following steps, you’ll create and configure a second bookmark to show the second visual.
 
 10. In the **Selection** pane, toggle the visibility of the two **Sales and Target by Month** items.
 
-	*In other words, make the visible visual hidden, and make the hidden visual visible.*
+	>**Note**: In other words, make the visible visual hidden, and make the hidden visual visible.
 
 	![Picture 122](Linked_image_Files/Lab7-image(45).png)
 
@@ -432,15 +437,15 @@ In this task you will add two bookmarks, one to display each of the monthly sale
 
 14. Resize and reposition both visuals so they fill the page beneath the multi-card visual, and completely overlap one another.
 
-	*Tip: To select the visual that is covered up, select it in the **Selection** pane.*
+	**Tip**: To select the visual that is covered up, select it in the **Selection** pane.
 
 	![Picture 124](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image47.png)
 
 15. In the **Bookmarks** pane, select each of the bookmarks, and notice that only one of the visuals is visible.
 
-	*The next stage of design is to add two buttons to the page, which will allow the report user to select the bookmarks.*
+	>**Note**: The next stage of design is to add two buttons to the page, which will allow the report user to select the bookmarks.
 
-### **Task 2: Add buttons**
+### Task 2: Add buttons
 
 In this task you will add two buttons, and assign bookmark actions to each.
 
@@ -472,15 +477,15 @@ In this task you will add two buttons, and assign bookmark actions to each.
 
 9. Create a copy of the button by using copy and paste, and then configure the new button as follows:
 
-	*Tip: The shortcut commands for copy and paste are **Ctrl+C** followed by **Ctrl+V**.*
+	**Tip:** The shortcut commands for copy and paste are **Ctrl+C** followed by **Ctrl+V**.
 
 	- Set the **Button Text** property to **Column Chart**
 
 	- In the **Action** section, set the **Bookmark** dropdown list to **Column Chart ON**
 
-	*The design of the Sales Analysis report is now complete.*
+	>**Note**: The design of the Sales Analysis report is now complete.
 
-### **Task 3: Publish the report**
+### Task 3: Publish the report
 
 In this task you will publish the report.
 
@@ -492,7 +497,7 @@ In this task you will publish the report.
 
 4. Save the Power BI Desktop file.
 
-	*The file must always be saved prior to publishing to the Power BI service.*
+	>**Note**: The file must always be saved prior to publishing to the Power BI service.
 
 5. On the **Home** ribbon tab, from inside the **Share** group, click **Publish**.
 
@@ -512,13 +517,13 @@ In this task you will publish the report.
 
 10. Close Power BI Desktop.
 
-	*You’ll explore the report in the Power BI service in the next exercise.*
+	>**Note**: You’ll explore the report in the Power BI service in the next exercise.
 
-## **Exercise 5: Explore the Report**
+## Exercise 5: Explore the Report
 
 In this exercise you will explore the report in the Power BI service.
 
-### **Task 1: Explore the report**
+### Task 1: Explore the report
 
 In this task you will explore the report in the Power BI service.
 
@@ -536,7 +541,7 @@ In this task you will explore the report in the Power BI service.
 
 6. Click each of the buttons, and then notice that a different visual is displayed.
 
-### **Task 2: Finish up**
+### Task 2: Finish up
 
 In this task you will complete the lab.
 
@@ -554,7 +559,7 @@ In this task you will complete the lab.
 - Add Bookmarks and Buttons
 - Explore the Report
 
-**You have successfully completed the lab**
+## You have successfully completed the lab
 
 
 
