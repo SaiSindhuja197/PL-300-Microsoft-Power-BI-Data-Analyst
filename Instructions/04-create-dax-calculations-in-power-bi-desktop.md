@@ -1,4 +1,4 @@
-# **PL-300 Module 4: Create DAX Calculations in Power BI Desktop, Part 1**
+# PL-300 Module 4: Create DAX Calculations in Power BI Desktop, Part 1
 
 ## Lab scenario
 In this lab you will create calculated tables, calculated columns, and simple measures using Data Analysis Expressions (DAX).
@@ -11,7 +11,7 @@ In this lab you learn how to:
 
 - Create measures
 
-### **Lab story**
+## Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -56,7 +56,7 @@ In this exercise you will create two calculated tables. The first will be the **
 
 In this task you will setup the environment for the lab.
 
-**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -126,13 +126,13 @@ In this task you will create the **Salesperson** table (direct relationship to *
 
 	![Picture 4](images/salespersonformula.png)
 
-	**Note**: For your convenience, all DAX definitions in this lab can be copied from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.
+	>**Note**: For your convenience, all DAX definitions in this lab can be copied from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.
 
-	**Note**: A calculated table is created by first entering the table name, followed by the equals symbol (=), followed by a DAX formula that returns a table. Note that the table name cannot already exist in the data model.
+	>**Note**: A calculated table is created by first entering the table name, followed by the equals symbol (=), followed by a DAX formula that returns a table. Note that the table name cannot already exist in the data model.
 
-	**Note**: The formula bar supports entering a valid DAX formula. It includes features like auto-complete, Intellisense and color-coding, enabling you to quickly and accurately enter the formula.
+	>**Note**: The formula bar supports entering a valid DAX formula. It includes features like auto-complete, Intellisense and color-coding, enabling you to quickly and accurately enter the formula.
 
-	**Note**: This table definition creates a copy of the **Salesperson (Performance)** table. It copies the data only, however model properties like visibility, formatting, etc. are not copied.
+	>**Note**: This table definition creates a copy of the **Salesperson (Performance)** table. It copies the data only, however model properties like visibility, formatting, etc. are not copied.
 
 	**Tip**: You’re encouraged to enter “white space” (i.e. carriage returns and tabs) to layout formulas in an intuitive and easy-to-read format—especially when formulas are long and complex. To enter a carriage return, press **Shift+Enter**. “White space” is optional.
 
@@ -302,23 +302,23 @@ In this task you will add additional columns to enable filtering and grouping by
 
     >**Note**: This formula computes a numeric value for each year/month combination.
 
-15. In Data view, verify that the new column contains numeric values (e.g. 201707 for July 2017, etc.).
+14. In Data view, verify that the new column contains numeric values (e.g. 201707 for July 2017, etc.).
 
 	![Picture 21](images/monthkeyy.png)
 
-16. Switch back to Report view.
+15. Switch back to Report view.
 
-17. In the **Data** pane, ensure that the **Month** field is selected (when selected, it will have a dark gray background).
+16. In the **Data** pane, ensure that the **Month** field is selected (when selected, it will have a dark gray background).
 
-18. On the **Column Tools** contextual ribbon, from inside the **Sort** group, click **Sort by Column**, and then select **MonthKey**.
+17. On the **Column Tools** contextual ribbon, from inside the **Sort** group, click **Sort by Column**, and then select **MonthKey**.
 
 	![Picture 22](images/column.png)
 
-19. In the matrix visual, notice that the months are now chronologically sorted.
+18. In the matrix visual, notice that the months are now chronologically sorted.
 
 	![Picture 23](images/yearfy.png)
 
-### **Task 5:** **Complete the Date table**
+### Task 5: Complete the Date table
 
 In this task, you will complete the design of the **Date** table by hiding a column and creating a hierarchy. You will then create relationships to the **Sales** and **Targets** tables.
 
@@ -375,11 +375,11 @@ In this task, you will mark the **Date** table as a date table.
 
 	>**Note**: Note that this design approach for a date table is suitable when you don’t have a date table in your data source. If you have a data warehouse, it would be appropriate to load date data from its date dimension table rather than “redefining” date logic in your data model.
 
-## **Exercise 2: Create Measures**
+## Exercise 2: Create Measures
 
 In this exercise, you will create and format several measures.
 
-### **Task 1: Create simple measures**
+### Task 1: Create simple measures
 
 In this task, you will create simple measures. Simple measures aggregate values in a single column or count rows of a table.
 
@@ -579,8 +579,8 @@ In this task you will complete the lab.
     - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
       
 ### Review
-
- In this lab, you have completed the following :
+In this lab, you have completed the following :
+ 
 - Get started with Power BI Desktop
 - Create different tables and columns
 - Create Measures
