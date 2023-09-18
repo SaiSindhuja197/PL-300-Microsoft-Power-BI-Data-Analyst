@@ -1,4 +1,6 @@
-# **PL-300 Module 5: Create DAX Calculations in Power BI Desktop, Part 2**
+# PL-300 Module 5: Create DAX Calculations in Power BI Desktop, Part 2
+
+## Lab scenario
 
 In this lab you will create measures with DAX expressions involving filter context manipulation.
 
@@ -8,7 +10,7 @@ In this lab you learn how to:
 
 - Use Time Intelligence functions
 
-### **Lab story**
+### Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -18,19 +20,25 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
-5. Create DAX Calculations in Power BI Desktop, Part 1
+4. Create DAX Calculations in Power BI Desktop, Part 1
 
-6. **Create DAX Calculations in Power BI Desktop, Part 2**
+5. **Create DAX Calculations in Power BI Desktop, Part 2**
 
-7. Design a Report in Power BI Desktop, Part 1
+6. Design a Report in Power BI Desktop, Part 1
 
-8. Design a Report in Power BI Desktop, Part 2
+7. Design a Report in Power BI Desktop, Part 2
 
-9. Create a Power BI Dashboard
+8. Create a Power BI Dashboard
 
-10. Perform Data Analysis in Power BI Desktop
+9. Perform Data Analysis in Power BI Desktop
 
-11. Enforce Row-Level Security
+10. Enforce Row-Level Security
+
+## Lab objectives
+In this lab, you will perform:
+
+- Use the CALCULATE() function to manipulate filter context
+- Use Time Intelligence functions
 
 ## Estimated timing: 60 minutes  
 
@@ -38,15 +46,15 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ![Picture 1](Linked_image_Files/Mod5-PL300.png)
 
-## **Exercise 1: Work with Filter Context**
+## Exercise 1: Work with Filter Context
 
 In this exercise you will create measures with DAX expressions involving filter context manipulation.
 
-### **Task 1: Get started**
+### Task 1: Get started
 
 In this task you will setup the environment for the lab.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -78,7 +86,7 @@ In this task you will setup the environment for the lab.
 
 10. Notice the yellow warning message beneath the ribbon.
 
-	*The message alerts you to the fact that the queries have not been applied to load as model tables.*
+    >**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
 
 11. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
@@ -105,7 +113,7 @@ In this task you will setup the environment for the lab.
 
     ![Picture 2](images/save.png)
 
-### **Task 2: Create a matrix visual**
+### Task 2: Create a matrix visual
 
 In this task you will create a matrix visual to support testing your new measures.
 
@@ -121,7 +129,7 @@ In this task you will create a matrix visual to support testing your new measure
 
 4. To configure the matrix visual fields, from the **Fields** pane, drag the **Region \| Regions** hierarchy, and drop it inside the visual.
 
-    *The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region \| Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.*
+    >**Note**: The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region \| Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.
 
 5. Add also the **Sales \| Sales** field.
 
@@ -129,7 +137,7 @@ In this task you will create a matrix visual to support testing your new measure
 
     ![Picture 47](images/arrowww.png)
 
-    *You may recall that the **Regions** hierarchy has the levels **Group**, **Country**, and **Region**.*
+    >**Note**: You may recall that the **Regions** hierarchy has the levels **Group**, **Country**, and **Region**.
 
 7. To format the visual, in the **Visualizations** pane, select the **Format** pane.
 
@@ -145,9 +153,9 @@ In this task you will create a matrix visual to support testing your new measure
 
     ![Picture 50](images/group.png)
 
-    *At Adventure Works, the sales regions are organized into groups, countries, and regions. All countries—except the United States—have just one region, which is named after the country. As the United States is such a large sales territory, it’s divided into five sales regions.*
+    >**Note**: At Adventure Works, the sales regions are organized into groups, countries, and regions. All countries—except the United States—have just one region, which is named after the country. As the United States is such a large sales territory, it’s divided into five sales regions.
 
-    *You’ll create several measures in this exercise, and then test them by adding them to the matrix visual.*
+    >**Note**: You’ll create several measures in this exercise, and then test them by adding them to the matrix visual.
 
 ### **Task 3: Manipulate filter context**
 
@@ -155,7 +163,7 @@ In this task you will create several measures with DAX expressions that use the 
 
 1. Right-click on the **Sales** table and select **New measure** option to add a measure to the **Sales** table, based on the following expression:
 
-    *For your convenience, all DAX definitions in this lab can be copied from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** file.*
+    >**Note**: For your convenience, all DAX definitions in this lab can be copied from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** file.
 
     ```
     Sales All Region =
@@ -163,11 +171,11 @@ In this task you will create several measures with DAX expressions that use the 
     CALCULATE(SUM(Sales[Sales]), REMOVEFILTERS(Region))
     ```
 
-    *The CALCULATE() function is a powerful function used to manipulate the filter context. The first argument takes an expression or a measure (a measure is just a named expression). Subsequent arguments allow modifying the filter context.*
+    >**Note**: The CALCULATE() function is a powerful function used to manipulate the filter context. The first argument takes an expression or a measure (a measure is just a named expression). Subsequent arguments allow modifying the filter context.
 
-     *The REMOVEFILTERS() function removes active filters. It can take either no arguments, or a table, a column, or multiple columns as its argument.*
+    >**Note**: The REMOVEFILTERS() function removes active filters. It can take either no arguments, or a table, a column, or multiple columns as its argument.
 
-      *In this formula, the measure evaluates the sum of the **Sales** column in a modified filter context, which removes any filters applied to the columns of the **Region** table.*
+    >**Note**: In this formula, the measure evaluates the sum of the **Sales** column in a modified filter context, which removes any filters applied to the columns of the **Region** table.
 
 2. Add the **Sales All Region** measure to the matrix visual.
 
@@ -175,11 +183,11 @@ In this task you will create several measures with DAX expressions that use the 
 
 3. Notice that the **Sales All Region** measure computes the total of all region sales for each region, country (subtotal) and group (subtotal).
 
-    *The new measure is yet to deliver a useful result. When the sales for a group, country, or region is divided by this value it will produce a useful ratio known as “percent of grand total”.*
+    >**Note**: The new measure is yet to deliver a useful result. When the sales for a group, country, or region is divided by this value it will produce a useful ratio known as “percent of grand total”.
 
 4. In the **Fields** pane, ensure that the **Sales All Region** measure is selected (when selected, it will have a dark gray background), and then in the formula bar, replace the measure name and formula with the following formula:
 
-    *Tip: To replace the existing formula, first copy the snippet. Then, click inside the formula bar and press **Ctrl+A** to select all text. Then, press **Ctrl+V** to paste the snippet to overwrite the selected text. Then press **Enter**.*
+    **Tip**: To replace the existing formula, first copy the snippet. Then, click inside the formula bar and press **Ctrl+A** to select all text. Then, press **Ctrl+V** to paste the snippet to overwrite the selected text. Then press **Enter**.
 
      ```
      Sales % All Region =
@@ -190,7 +198,7 @@ In this task you will create several measures with DAX expressions that use the 
 	REMOVEFILTERS(Region)))
      ```
 
-     *The measure has been renamed to accurately reflect the updated formula. The DIVIDE() function divides the **Sales** measure (not modified by filter context) by the **Sales** measure in a modified context, which removes any filters applied to the **Region** table.*
+     >**Note**: The measure has been renamed to accurately reflect the updated formula. The DIVIDE() function divides the **Sales** measure (not modified by filter context) by the **Sales** measure in a modified context, which removes any filters applied to the **Region** table.
 
 5. In the matrix visual, notice that the measure has been renamed and that a different values now appear for each group, country, and region.
 
@@ -213,7 +221,7 @@ In this task you will create several measures with DAX expressions that use the 
     
 9. Notice that the **Sales % Country** measure formula differs slightly from the **Sales % All Region** measure formula.
 
-    *The difference is that the denominator modifies the filter context by removing filters on the **Region** column of the **Region** table, not all columns of the **Region** table. It means that any filters applied to the group or country columns are preserved. It’ll achieve a result that represents the sales as a percentage of country.*
+    >**Note**: The difference is that the denominator modifies the filter context by removing filters on the **Region** column of the **Region** table, not all columns of the **Region** table. It means that any filters applied to the group or country columns are preserved. It’ll achieve a result that represents the sales as a percentage of country.
 
 10. Add the **Sales % Country** measure to the matrix visual.
 
@@ -221,7 +229,7 @@ In this task you will create several measures with DAX expressions that use the 
 
     ![Picture 54](images/northamrica.png)
 
-    *You may recall that only the United States has multiple regions. All other countries comprise a single region, which explains why they are all 100%.*
+    >**Note**: You may recall that only the United States has multiple regions. All other countries comprise a single region, which explains why they are all 100%.
 
 12. To improve the readability of this measure in visual, overwrite the **Sales % Country** measure with this improved formula.
 
@@ -236,7 +244,7 @@ In this task you will create several measures with DAX expressions that use the 
 	REMOVEFILTERS(Region[Region]))))
     ```
 
-    *Embedded within the IF() function, the ISINSCOPE() function is used to test whether the region column is the level in a hierarchy of levels. When true, the DIVIDE() function is evaluated. The absence of a false part means that blank is returned when the region column is not in scope.*
+    >**Note**: Embedded within the IF() function, the ISINSCOPE() function is used to test whether the region column is the level in a hierarchy of levels. When true, the DIVIDE() function is evaluated. The absence of a false part means that blank is returned when the region column is not in scope.
 
 13. Notice that the **Sales % Country** measure now only returns a value when a region is in scope.
 
@@ -255,11 +263,11 @@ In this task you will create several measures with DAX expressions that use the 
 	  Region[Country])))
     ```
 
-    *To achieve sales as a percentage of group, two filters can be applied to effectively remove the filters on two columns.*
+    >**Note**: To achieve sales as a percentage of group, two filters can be applied to effectively remove the filters on two columns.
 
-16. Add the **Sales % Group** measure to the matrix visual.
+15. Add the **Sales % Group** measure to the matrix visual.
 
-17. To improve the readability of this measure in visual, overwrite the **Sales % Group** measure with this improved formula.
+16. To improve the readability of this measure in visual, overwrite the **Sales % Group** measure with this improved formula.
 
     ```
     Sales % Group =
@@ -276,21 +284,21 @@ In this task you will create several measures with DAX expressions that use the 
       ```
 
 
-18. Notice that the **Sales % Group** measure now only returns a value when a region or country is in scope.
+17. Notice that the **Sales % Group** measure now only returns a value when a region or country is in scope.
 
-19. In Model view, place the three new measures into a display folder named **Ratios**.
+18. In Model view, place the three new measures into a display folder named **Ratios**.
 
     ![Picture 56](images/rations.png)
 
-20. Save the Power BI Desktop file.
+19. Save the Power BI Desktop file.
 
-    *The measures added to the **Sales** table have modified filter context to achieve hierarchical navigation. Notice that the pattern to achieve the calculation of a subtotal requires removing some columns from the filter context, and to arrive at a grand total, all columns must be removed.*
+    >**Note**: The measures added to the **Sales** table have modified filter context to achieve hierarchical navigation. Notice that the pattern to achieve the calculation of a subtotal requires removing some columns from the filter context, and to arrive at a grand total, all columns must be removed.
 
-## **Exercise 2: Work with Time Intelligence**
+## Exercise 2: Work with Time Intelligence
 
 In this exercise you will create a sales year-to-date (YTD) measure and sales year-over-year (YoY) growth measure.
 
-### **Task 1: Create a YTD measure**
+### Task 1: Create a YTD measure
 
 In this task you will create a sales YTD measure.
 
@@ -302,9 +310,9 @@ In this task you will create a sales YTD measure.
    Sales YTD = TOTALYTD(SUM(Sales[Sales]), 'Date'[Date], "6-30")
    ```
 
-   *The TOTALYTD() function evaluates an expression—in this case the sum of the **Sales** column—over a given date column. The date column must belong to a date table marked as a date table, as was done in the **Create DAX Calculations in Power BI Desktop, Part 1** lab.*
+   >**Note**: The TOTALYTD() function evaluates an expression—in this case the sum of the **Sales** column—over a given date column. The date column must belong to a date table marked as a date table, as was done in the **Create DAX Calculations in Power BI Desktop, Part 1** lab.
 
-   *The function can also take a third optional argument representing the last date of a year. The absence of this date means that December 31 is the last date of the year. For Adventure Works, June in the last month of their year, and so “6-30” is used.*
+   >**Note**: The function can also take a third optional argument representing the last date of a year. The absence of this date means that December 31 is the last date of the year. For Adventure Works, June in the last month of their year, and so “6-30” is used.
 
 4. Add the **Sales** field and the **Sales YTD** measure to the matrix visual.
 
@@ -312,9 +320,9 @@ In this task you will create a sales YTD measure.
 
     ![Picture 59](images/salesytd.png)
 
-   *The TOTALYTD() function performs filter manipulation, specifically time filter manipulation. For example, to compute YTD sales for September 2017 (the third month of the fiscal year), all filters on the **Date** table are removed and replaced with a new filter of dates commencing at the beginning of the year (July 1, 2017) and extending through to the last date of the in-context date period (September 30, 2017).*
+    >**Note**: The TOTALYTD() function performs filter manipulation, specifically time filter manipulation. For example, to compute YTD sales for September 2017 (the third month of the fiscal year), all filters on the **Date** table are removed and replaced with a new filter of dates commencing at the beginning of the year (July 1, 2017) and extending through to the last date of the in-context date period (September 30, 2017).
 
-    > **Note** that many Time Intelligence functions are available in DAX to support common time filter manipulations.*
+    >**Note** that many Time Intelligence functions are available in DAX to support common time filter manipulations.
 
 ### **Task 2: Create a YoY growth measure**
 
@@ -332,9 +340,9 @@ In this task you will create a sales YoY growth measure.
    SalesPriorYear
    ```
 
-   *The **Sales YoY Growth** measure formula declares a variable. Variables can be useful for simplifying the formula logic, and more efficient when an expression needs to be evaluated multiple times within the formula (which will be the case for the YoY growth logic). Variables are declared by a unique name, and the measure expression must then be output after the **RETURN** keyword.*
+   >**Note**: The **Sales YoY Growth** measure formula declares a variable. Variables can be useful for simplifying the formula logic, and more efficient when an expression needs to be evaluated multiple times within the formula (which will be the case for the YoY growth logic). Variables are declared by a unique name, and the measure expression must then be output after the **RETURN** keyword.
 
-   *The **SalesPriorYear** variable is assigned an expression which calculates the sum of the **Sales** column in a modified context that uses the PARALLELPERIOD() function to shift 12 months back from each date in filter context.*
+   >**Note**: The **SalesPriorYear** variable is assigned an expression which calculates the sum of the **Sales** column in a modified context that uses the PARALLELPERIOD() function to shift 12 months back from each date in filter context.
 
 2. Add the **Sales YoY Growth** measure to the matrix visual.
 
@@ -344,7 +352,7 @@ In this task you will create a sales YoY growth measure.
 
     ![Picture 61](images/caliculation.png)
 
-    *Now that the “difficult part” of the formula has been tested, you can overwrite the measure with the final formula which computes the growth result.*
+    >**Note**: Now that the “difficult part” of the formula has been tested, you can overwrite the measure with the final formula which computes the growth result.
 
 5. To complete the measure, overwrite the **Sales YoY Growth** measure with this formula, formatting it as a percentage with two decimal places:
 
@@ -364,7 +372,7 @@ In this task you will create a sales YoY growth measure.
 
     ![Picture 62](images/salessss.png)
 
-    *It means that July 2018 sales ($2,411,559) represent a nearly 400% (almost 4x) improvement over the sales achieved at the same time of the prior year ($489,328).*
+    >**Note**: It means that July 2018 sales ($2,411,559) represent a nearly 400% (almost 4x) improvement over the sales achieved at the same time of the prior year ($489,328).
 
 8. In Model view, place the two new measures into a display folder named **Time Intelligence**.
 
@@ -399,10 +407,10 @@ In this task you will complete the lab.
 	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Review
-  
- In this lab, you have completed the following:
- -Measures with DAX expressions involving filter context manipulation 
- -Created a sales year-to-date (YTD) measure and sales year-over-year (YoY) growth measure
+## Review
+In this lab, you have completed the following:
 
-**You have successfully completed the lab**
+ - Measures with DAX expressions involving filter context manipulation 
+ - Created a sales year-to-date (YTD) measure and sales year-over-year (YoY) growth measure
+
+## You have successfully completed the lab

@@ -1,5 +1,6 @@
-# **PL-300 Module 1: Prepare Data in Power BI Desktop**
+# PL-300 Module 1: Prepare Data in Power BI Desktop
 
+## Lab scenario 
 In this lab you commence the development of a Power BI Desktop solution for the Adventure Works company. It involves connecting to source data, previewing the data, and using data preview techniques to understand the characteristics and quality of the source data.
 
 In this lab you learn how to:
@@ -14,7 +15,7 @@ In this lab you learn how to:
 
 - Use data preview techniques to better understand the data
 
-### **Lab story**
+## Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -24,19 +25,26 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
-5. Create DAX Calculations in Power BI Desktop
+4. Create DAX Calculations in Power BI Desktop
 
-6. Create Advanced DAX Calculations in Power BI Desktop
+5. Create Advanced DAX Calculations in Power BI Desktop
 
-7. Design a Report in Power BI Desktop
+6. Design a Report in Power BI Desktop
 
-8. Enhance a Report in Power BI Desktop
+7. Enhance a Report in Power BI Desktop
 
-9. Create a Power BI Dashboard
+8. Create a Power BI Dashboard
 
-10. Perform Data Analysis in Power BI Desktop
+9. Perform Data Analysis in Power BI Desktop
 
-11. Enforce Row-Level Security
+10. Enforce Row-Level Security
+
+## Lab objectives
+In this lab, you will perform:
+
+- Set Power BI Desktop options
+- Connect and preview to source data
+- Use data preview techniques to better understand the data
 
 ## Estimated timing: 60 minutes    
 
@@ -44,18 +52,18 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ![Picture 1](Linked_image_Files/Mod1-PL300.png)
    
-## **Exercise 1: Prepare Data**
+## Exercise 1: Prepare Data
 
 In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
 
-### **Task 1: Get started with Power BI Desktop**
+### Task 1: Get started with Power BI Desktop
 
 In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
 - Data Load > Import relationships from data sources on first load
 - Data Load > Autodetect new relationships after data is loaded
 
-> **Note**: While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you're adding each one.*
+> **Note**: While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you're adding each one.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -92,7 +100,7 @@ In this task, you start by opening a starter Power BI file (.pbix). The starter 
 	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 2: Get data from SQL Server**
+### Task 2: Get data from SQL Server
 
 In this task you will create queries based on SQL Server tables.
 
@@ -114,21 +122,21 @@ In this task you will create queries based on SQL Server tables.
 
 	>**Note**: if Pop-up appears click on **Ok**.
 
-4. In the **Navigator** window, at the left, expand the **AdventureWorksDW2020** database.
+5. In the **Navigator** window, at the left, expand the **AdventureWorksDW2020** database.
 
 	> **Note**: The **AdventureWorksDW2020** database is based on the **AdventureWorksDW2017** sample database. It has been modified to support the learning objectives of the course labs.
 
 	![Picture 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(17).png)
 
-5. Select—but don’t check—the **DimEmployee** table.
+6. Select—but don’t check—the **DimEmployee** table.
 
 	![Picture 29](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(18).png)
 
-6. In the right pane, notice a preview of the table data.
+7. In the right pane, notice a preview of the table data.
 
 	> **Note**: The preview data allows you to determine the columns and a sample of rows.
 
-7. To create queries, select the checkbox next to the following six tables:
+8. To create queries, select the checkbox next to the following six tables:
 
 	- DimEmployee
 
@@ -142,13 +150,13 @@ In this task you will create queries based on SQL Server tables.
 
 	- FactResellerSales
 
-8. To apply transformations to the data of the selected tables, click **Transform Data**.
+9. To apply transformations to the data of the selected tables, click **Transform Data**.
 
 	>**Note**: You won’t be transforming the data in this lab. The objectives of this lab focus on exploring and profiling the data in the **Power Query Editor** window.
 
 	![Picture 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(19).png)
 
-### **Task 3: Preview Data in Power Query Editor**
+### Task 3: Preview Data in Power Query Editor
 
 In this task you will preview the data of the SQL Server queries. First, you will learn relevant information about the data. You will also use column quality, column distribution, and column profile tools to understand the data and to assess data quality.
 
@@ -256,7 +264,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
 	> **Note**: Missing **TotalProductCost** column values is a data quality issue. To address the issue, in the **Load Data in Power BI Desktop** lab, you’ll apply transformations to fill in missing values by using the product standard cost, which is stored in the related **DimProduct** table.
 
-### **Task 4: Get data from a CSV file**
+### Task 4: Get data from a CSV file
 
 In this task you will create a query based on a CSV file.
 
@@ -293,7 +301,7 @@ In this task you will create a query based on a CSV file.
 
 	> **Note**: You’ll apply many transformations to achieve a different shaped result consisting of only three columns: **Date**, **EmployeeKey**, and **TargetAmount** in the **Load Data in Power BI Desktop** lab.
 
-### **Task 5: Finish up**
+### Task 5: Finish up
 
 In this task you will complete the lab.
 
@@ -328,4 +336,4 @@ In this task you will complete the lab.
 - Preview Data in Power Query Editor
 - Get data from a CSV file
 
-**You have successfully completed the lab**
+## You have successfully completed the lab

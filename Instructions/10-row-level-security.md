@@ -1,5 +1,6 @@
-# **PL-300 Module 10: Enforce Row-Level Security**
+# PL-300 Module 10: Enforce Row-Level Security
 
+## Lab scenario
 In this lab you will create a many-to-many relationship between the **Salesperson** table and the **Sales** table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
 
 In this lab you learn how to:
@@ -8,7 +9,7 @@ In this lab you learn how to:
 
 - Enforce row-level security
 
-### **Lab story**
+## Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -32,21 +33,27 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 10. **Enforce Row-Level Security**
 
+## Lab objectives
+In this lab, you will perform:
+
+- Configure many-to-many relationships
+- Enforce row-level security
+
 ## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
 
 ![Picture 1](Linked_image_Files/Mod10-PL300.png)
 
-## **Exercise 1: Enforce row-level security**
+## Exercise 1: Enforce row-level security
 
 In this exercise you will enforce row-level security to ensure a salesperson can only ever see sales made in their assigned region(s).
 
-### **Task 1: Get started**
+### Task 1: Get started
 
 In this task you will setup the environment for the lab.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -140,7 +147,7 @@ In this task you will setup the environment for the lab.
 	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 2: Enforce row-level security**
+### Task 2: Enforce row-level security
 
 In this task you will enforce row-level security to ensure a salesperson can only see sales made in their assigned region(s).
 
@@ -152,7 +159,7 @@ In this task you will enforce row-level security to ensure a salesperson can onl
 
 3. Review the data, noticing that Michael Blythe (EmployeeKey 281) has a UPN value of: *michael-blythe@adventureworks.com*
 
-	*Recall that Michael Blythe is assigned to three sales regions: US Northeast, US Central, and US Southeast.*
+	>**Note**: Recall that Michael Blythe is assigned to three sales regions: US Northeast, US Central, and US Southeast.
 
 4. Switch to Report view.
 
@@ -176,7 +183,7 @@ In this task you will enforce row-level security to ensure a salesperson can onl
 
 	![Picture 11](Linked_image_Files/lab10-image25.png)
 
-	*USERPRINCIPALNAME() is a Data Analysis Expressions (DAX) function that returns the name of the authenticated user. It means that the **Salesperson (Performance)** table will filter by the User Principal Name (UPN) of the user querying the model.*
+	>**Note**: USERPRINCIPALNAME() is a Data Analysis Expressions (DAX) function that returns the name of the authenticated user. It means that the **Salesperson (Performance)** table will filter by the User Principal Name (UPN) of the user querying the model.
 
 10. Click **Save**.
 
@@ -192,7 +199,7 @@ In this task you will enforce row-level security to ensure a salesperson can onl
 
 	![Picture 5709](Linked_image_Files/lab10-image28.png)
 
-	*This configuration results in using the **Salespeople** role and impersonating the user with your Michael Blythe’s name.*
+	>**Note**: This configuration results in using the **Salespeople** role and impersonating the user with your Michael Blythe’s name.
 
 14. Click **OK**.
 
@@ -210,7 +217,7 @@ In this task you will enforce row-level security to ensure a salesperson can onl
 
 	![Picture 5712](Linked_image_Files/lab10-image32.png)
 
-	*When the Power BI Desktop file is published to the Power BI service, you’ll need to complete a post-publication task to map security principals to the **Salespeople** role. You won’t do that in this lab.*
+	>**Note**: When the Power BI Desktop file is published to the Power BI service, you’ll need to complete a post-publication task to map security principals to the **Salespeople** role. You won’t do that in this lab.
 
 18. To delete the role, on the **Modeling** ribbon tab, from inside the **Security** group, click **Manage Roles**.
 
@@ -226,13 +233,14 @@ In this task you will enforce row-level security to ensure a salesperson can onl
 
 	![Picture 18](Linked_image_Files/lab10-image35.png)
 
-### **Task 3: Finish up**
+### Task 3: Finish up
 
 In this task you will complete the lab.
 
 1. Save the Power BI Desktop file.
 
-### Review
- In this lab, you have enforced row level security.
+## Review
+In this lab, you have completed:
+- Enforced row level security.
 
-**You have successfully completed the lab**
+## You have successfully completed the lab

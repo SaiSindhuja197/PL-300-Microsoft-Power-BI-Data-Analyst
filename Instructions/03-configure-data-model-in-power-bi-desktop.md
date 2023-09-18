@@ -1,4 +1,6 @@
-# **PL-300 Module 3: Model Data in Power BI Desktop**
+# PL-300 Module 3: Model Data in Power BI Desktop
+
+## Lab scenario
 
 In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
 
@@ -10,8 +12,7 @@ In this lab you learn how to:
 
 - Create hierarchies
 
-
-### **Lab story**
+### Lab story
 
 This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
@@ -21,19 +22,26 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. **Model Data in Power BI Desktop**
 
-5. Create DAX Calculations in Power BI Desktop
+4. Create DAX Calculations in Power BI Desktop
 
-6. Create Advanced DAX Calculations in Power BI Desktop
+5. Create Advanced DAX Calculations in Power BI Desktop
 
-7. Design a Report in Power BI Desktop
+6. Design a Report in Power BI Desktop
 
-8. Enhance a Report in Power BI Desktop
+7. Enhance a Report in Power BI Desktop
 
-9. Create a Power BI Dashboard
+8. Create a Power BI Dashboard
 
-10. Perform Data Analysis in Power BI Desktop
+9. Perform Data Analysis in Power BI Desktop
 
-11. Enforce Row-Level Security
+10. Enforce Row-Level Security
+
+## Lab objectives
+In this lab, you will perform:
+
+- Create model relationships
+- Configure table and column properties
+- Create hierarchies
 
 ## Estimated timing: 60 minutes  
 
@@ -41,15 +49,15 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
   ![Picture 1](Linked_image_Files/Mod3-PL300.png)
 
-## **Exercise 1: Create Model Relationships**
+## Exercise 1: Create Model Relationships
 
 In this exercise you will create model relationships.
 
-### **Task 1: Get started**
+### Task 1: Get started
 
 In this task you will setup the environment for the lab.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -116,7 +124,7 @@ In this task you will setup the environment for the lab.
 
 1. Notice the yellow warning message beneath the ribbon.
 
-	*The message alerts you to the fact that the queries have not been applied to load as model tables.*
+   **Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
 
 1. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
@@ -141,16 +149,16 @@ In this task you will setup the environment for the lab.
 
 1. Click **Save**.
 
- 	![Picture 3](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(8).png)
+   ![Picture 3](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(8).png)
 
-     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 	
-	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+     - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+     - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+     - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+     - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 2: Create model relationships**
+### Task 2: Create model relationships
 
 In this task you will create model relationships.
 
@@ -160,9 +168,9 @@ In this task you will create model relationships.
 
 2. If you do not see all seven tables, scroll horizontally to the right, and then drag and arrange the tables more closely together so they can all be seen at the same time.
 
-	*Tip: You can also use the zoom control located at the bottom of the window.*
+	**Tip**: You can also use the zoom control located at the bottom of the window.
 
-	*In Model view, it’s possible to view each table and relationships (connectors between tables). Presently, there are no relationships because in the **Prepare Data in Power BI Desktop** lab, you disabled the data load relationship options.*
+	**Note**: In Model view, it’s possible to view each table and relationships (connectors between tables). Presently, there are no relationships because in the **Prepare Data in Power BI Desktop** lab, you disabled the data load relationship options.
 
 3. To return to Report view, at the left, click the **Report** view icon.
 
@@ -176,7 +184,7 @@ In this task you will create model relationships.
 
 	![Picture 329](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(12).png)
 
-	*The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.*
+	**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.
 
 6. To add an additional column to the table, in the **Fields** pane, check the **Sales \| Sales** field.
 
@@ -184,7 +192,7 @@ In this task you will create model relationships.
 
 	![Picture 330](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(13).png)
 
-	*The issue is that the table is based on fields from different tables. The expectation is that each product category displays the sales for that category. However, because there isn’t a model relationship between these tables, the **Sales** table is not filtered. You’ll now add a relationship to propagate filters between the tables.*
+	**Note**: The issue is that the table is based on fields from different tables. The expectation is that each product category displays the sales for that category. However, because there isn’t a model relationship between these tables, the **Sales** table is not filtered. You’ll now add a relationship to propagate filters between the tables.
 
 8. On the **Modeling** ribbon tab, from inside the **Relationships** group, click **Manage Relationships**.
 
@@ -206,19 +214,19 @@ In this task you will create model relationships.
 
 13. Notice the **ProductKey** columns in each table have been automatically selected.
 
-	*The columns were selected because they share the same name and data type.*
+    **Note**: The columns were selected because they share the same name and data type.
 
 14. In the **Cardinality** dropdown list, notice that **One To Many (1:*)** is selected.
 
-	*The cardinality was automatically detected, because Power BI understands that the **ProductKey** column from the **Product** table contains unique values. One-to-many relationships are the most common cardinality, and all relationship you create in this lab will be this type.*
+    **Note**: The cardinality was automatically detected, because Power BI understands that the **ProductKey** column from the **Product** table contains unique values. One-to-many relationships are the most common cardinality, and all relationship you create in this lab will be this type.
 
 15. In the **Cross Filter Direction** dropdown list, notice that **Single** is selected.
 
-	*Single filter direction means that filters propagate from the “one side” to the “many side”. In this case, it means filters applied to the **Product** table will propagate to the **Sales** table, but not in the opposite direction.*
+    **Note**: Single filter direction means that filters propagate from the “one side” to the “many side”. In this case, it means filters applied to the **Product** table will propagate to the **Sales** table, but not in the opposite direction.
 
 16. Notice that the **Mark This Relationship Active** is checked.
 
-	*Active relationships propagate filters. It’s possible to mark a relationship as inactive so filters don’t propagate. Inactive relationships can exist when there are multiple relationship paths between tables. In this case, model calculations can use special functions to activate them.*
+    **Note**: Active relationships propagate filters. It’s possible to mark a relationship as inactive so filters don’t propagate. Inactive relationships can exist when there are multiple relationship paths between tables. In this case, model calculations can use special functions to activate them.
 
 17. Click **OK**.
 
@@ -232,7 +240,7 @@ In this task you will create model relationships.
 
 	![Picture 337](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(20).png)
 
-	*Filters applied to the **Product** table now propagate to the **Sales** table.*
+	**Note**: Filters applied to the **Product** table now propagate to the **Sales** table.
 
 20. Switch to Model view, and then notice there is now a connector between the two tables (it does not matter if the tables are positioned next to each other).
 
@@ -240,17 +248,17 @@ In this task you will create model relationships.
 
 21. In the diagram, notice that you can interpret the cardinality which is represented by the **1** and ***** indicators.
 
-	*Filter direction is represented by the arrow head. A solid line represents an active relationship; a dashed line represents an inactive relationship.*
+	**Note**: Filter direction is represented by the arrow head. A solid line represents an active relationship; a dashed line represents an inactive relationship.
 
 22. Hover the cursor over the relationship to highlight the related columns.
 
-	*There’s an easier way to create a relationship. In the model diagram, you can drag and drop columns to create a new relationship.*
+	**Note**: There’s an easier way to create a relationship. In the model diagram, you can drag and drop columns to create a new relationship.
 
 23. To create a new relationship using a different technique, from the **Reseller** table, drag the **ResellerKey** column on to the **ResellerKey** column of the **Sales** table.
 
 	![Picture 339](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image-(22).png)
 
-	*Tip: Sometime a column doesn’t want to be dragged. If this situation arises, select a different column, and then select the column you intend to drag again, and then try again. Ensure that you see the new relationship added to the diagram.*
+	**Tip**: Sometime a column doesn’t want to be dragged. If this situation arises, select a different column, and then select the column you intend to drag again, and then try again. Ensure that you see the new relationship added to the diagram.
 
 24. Use the new technique to create the following two model relationships:
 
@@ -265,11 +273,11 @@ In this task you will create model relationships.
 
 26. Save the Power BI Desktop file.
 
-## **Exercise 2: Configure Tables**
+## Exercise 2: Configure Tables
 
 In this exercise you will configure each table by creating hierarchies, and hiding, formatting, and categorizing columns.
 
-### **Task 1: Configure the Product table**
+### Task 1: Configure the Product table
 
 In this task you will configure the **Product** table.
 
@@ -291,7 +299,7 @@ In this task you will configure the **Product** table.
 
 	![Picture 343](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(26).png)
 
-	*Tip: Don’t forget to click **Apply Level Changes**—it’s a common mistake to overlook this step.*
+	**Tip**: Don’t forget to click **Apply Level Changes**—it’s a common mistake to overlook this step.
 
 7. In the **Fields** pane, notice the **Products** hierarchy.
 
@@ -313,9 +321,9 @@ In this task you will configure the **Product** table.
 
 	![Picture 349](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(30).png)
 
-	*Display folders are a great way to declutter tables—especially for tables that comprise many fields.*
+	**Note**: Display folders are a great way to declutter tables—especially for tables that comprise many fields.
 
-### **Task 2: Configure the Region table**
+### Task 2: Configure the Region table
 
 In this task you will configure the **Region** table.
 
@@ -335,9 +343,9 @@ In this task you will configure the **Region** table.
 
 	![Picture 352](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(32).png)
 
-	*Data categorization can provide hints to the report designer. In this case, categorizing the column as country or region provides more accurate information to Power BI when it renders a map visualization.*
+	**Note**: Data categorization can provide hints to the report designer. In this case, categorizing the column as country or region provides more accurate information to Power BI when it renders a map visualization.
 
-### **Task 3: Configure the Reseller table**
+### Task 3: Configure the Reseller table
 
 In this task you will configure the **Reseller** table.
 
@@ -362,7 +370,7 @@ In this task you will configure the **Reseller** table.
 	![Picture 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(34).png)
 
 
-### **Task 4: Configure the Sales table**
+### Task 4: Configure the Sales table
 
 In this task you will configure the **Sales** table.
 
@@ -372,7 +380,7 @@ In this task you will configure the **Sales** table.
 
 	![Picture 358](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(35).png)
 
-	*Descriptions can be applied to tables, columns, hierarchies, or measures. In the **Fields** pane, description text is revealed in a tooltip when a report author hovers their cursor over the field.*
+	**Note**: Descriptions can be applied to tables, columns, hierarchies, or measures. In the **Fields** pane, description text is revealed in a tooltip when a report author hovers their cursor over the field.
 
 3. Select the **Quantity** column.
 
@@ -388,9 +396,9 @@ In this task you will configure the **Sales** table.
 
 	![Picture 354](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(37).png)
 
-	*By default, numeric columns will summarize by summing values together. This default behavior is not suitable for a column like **Unit Price**, which represents a rate. Setting the default summarization to average will produce a meaningful result.*
+	**Note**: By default, numeric columns will summarize by summing values together. This default behavior is not suitable for a column like **Unit Price**, which represents a rate. Setting the default summarization to average will produce a meaningful result.
 
-### **Task 5: Bulk update properties**
+### Task 5: Bulk update properties
 
 In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
@@ -428,9 +436,9 @@ In this task you will update multiple columns using single bulk updates. You wil
 
 	![Picture 355](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(38).png)
 
-	*The columns were hidden because they’re either used by relationships or will be used in row-level security configuration or calculation logic.*
+	**Note**: The columns were hidden because they’re either used by relationships or will be used in row-level security configuration or calculation logic.
 
-	*You’ll use the **SalesOrderNumber** in a calculation in the **Create DAX Calculations in Power BI Desktop** lab.*
+	**Note**: You’ll use the **SalesOrderNumber** in a calculation in the **Create DAX Calculations in Power BI Desktop** lab.
 
 4. Multi-select the following three columns:
 
@@ -444,11 +452,11 @@ In this task you will update multiple columns using single bulk updates. You wil
 
 	![Picture 356](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(39).png)
 
-## **Exercise 3: Review the Model Interface**
+## Exercise 3: Review the Model Interface
 
 In this exercise you will switch to Report view, and review the model interface.
 
-### **Task 1: Review the model interface**
+### Task 1: Review the model interface
 
 In this task you will switch to Report view, and review the model interface.
 
@@ -472,9 +480,9 @@ In this task you will switch to Report view, and review the model interface.
 
 	![Picture 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(40).png)
 
-	*The **Targets \| TargetMonth** field delivers a similar hierarchy. These hierarchies were not created by you. They were created automatically. There is a problem, however. The Adventure Works financial year commences on July 1 of each year. But, in these automatically created date hierarchies, the date hierarchy year commences on January 1 of each year.*
+	**Note**: The **Targets \| TargetMonth** field delivers a similar hierarchy. These hierarchies were not created by you. They were created automatically. There is a problem, however. The Adventure Works financial year commences on July 1 of each year. But, in these automatically created date hierarchies, the date hierarchy year commences on January 1 of each year.
 
-	*You’ll now turn this automatic behavior off. In the **Create DAX Calculations in Power BI Desktop** lab, you’ll use DAX to create a date table, and configure it define the Adventure Works’ calendar.*
+	**Note**: You’ll now turn this automatic behavior off. In the **Create DAX Calculations in Power BI Desktop** lab, you’ll use DAX to create a date table, and configure it define the Adventure Works’ calendar.
 
 4. To turn off auto/date time, click the **File** ribbon tab to open the backstage view.
 
@@ -499,11 +507,11 @@ In this task you will switch to Report view, and review the model interface.
 	![Picture 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(45).png)
 
 
-## **Exercise 4: Create Quick Measures**
+## Exercise 4: Create Quick Measures
 
 In this exercise you will create two quick measures.
 
-### **Task 1: Create quick measures**
+### Task 1: Create quick measures
 
 In this task you will create two quick measures to calculate profit and profit margin.
 
@@ -527,19 +535,19 @@ In this task you will create two quick measures to calculate profit and profit m
 
 	![Picture 369](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(49).png)
 
-	*A quick measure creates the calculation formula for you. They’re easy and fast to create for simple and common calculations. You’ll create measures without using this tool in the **Create DAX Calculations in Power BI Desktop** lab.*
+	**Note**: A quick measure creates the calculation formula for you. They’re easy and fast to create for simple and common calculations. You’ll create measures without using this tool in the **Create DAX Calculations in Power BI Desktop** lab.
 
 7. In the **Fields** pane, inside the **Sales** table, notice that new measure.
 
 	![Picture 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(50).png)
 
-	*Measures are adorned with the calculator icon.*
+	**Note**: Measures are adorned with the calculator icon.
 
 8. To rename the measure, right-click it, and then select **Rename**.
 
 	![Picture 371](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(51).png)
 
-	*Tip: To rename a field, you can also double-click it, or select it and press **F2**.*
+	**Tip**: To rename a field, you can also double-click it, or select it and press **F2**.
 
 9. Rename the measure to **Profit**, and then press **Enter**.
 
@@ -575,7 +583,7 @@ In this task you will create two quick measures to calculate profit and profit m
 
 	![Picture 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(57).png)
 
-### **Task 2: Create a many-to-many relationship**
+### Task 2: Create a many-to-many relationship
 
 In this task you will create a many-to-many relationship between the **Salesperson** table and the **Sales** table.
 
@@ -585,13 +593,13 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 	- Sales \| Sales
 
-	*The labs use a shorthand notation to reference a field. It will look like this: **Salesperson \| Salesperson** . In this example, **Salesperson**  is the table name and **Salesperson**  is the field name.*
+	**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Salesperson \| Salesperson** . In this example, **Salesperson**  is the table name and **Salesperson**  is the field name.
 
 	![Picture 1](Linked_image_Files/image-(9).png)
 
-	*The table displays sales made by each salesperson. However, there’s another relationship between salespeople and sales. Some salespeople belong to one, two, or possibly more sales regions. In addition, sales regions can have multiple salespeople assigned to them.*
+	**Note**: The table displays sales made by each salesperson. However, there’s another relationship between salespeople and sales. Some salespeople belong to one, two, or possibly more sales regions. In addition, sales regions can have multiple salespeople assigned to them.
 
-	*From a performance management perspective, a salesperson’s sales (based on their assigned territories) need to be analyzed and compared with sales targets. You’ll create relationships to support this analysis in the next exercise.*
+	**Note**: From a performance management perspective, a salesperson’s sales (based on their assigned territories) need to be analyzed and compared with sales targets. You’ll create relationships to support this analysis in the next exercise.
 
 2. Notice that Michael Blythe has sold almost $9 million.
 
@@ -607,13 +615,13 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 	- **Region \| SalesTerritoryKey** to **SalespersonRegion \| SalesTerritoryKey**
 
-	*The **SalespersonRegion** table can be considered to be a bridging table.*
+	**Note**: The **SalespersonRegion** table can be considered to be a bridging table.
 
 6. Switch to Report view, and then notice that the visual has not updated—the sales result for Michael Blythe has not changed.
 
 7. Switch back to Model view, and then follow the relationship filter directions (arrowhead) from the **Salesperson** table.
 
-	*Consider that the **Salesperson** table filters the **Sales** table. It also filters the **SalespersonRegion** table, but it does not continue by propagating filters to the **Region** table (the arrowhead is pointing the wrong direction).*
+	**Note**: Consider that the **Salesperson** table filters the **Sales** table. It also filters the **SalespersonRegion** table, but it does not continue by propagating filters to the **Region** table (the arrowhead is pointing the wrong direction).
 
 	![Picture 380](Linked_image_Files/image(11).png)
 
@@ -635,7 +643,7 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 13. Switch to Report view, and then notice that the sales values have still not changed.
 
-	*The issue now relates to the fact that there are two possible filter propagation paths between the **Salesperson** and **Sales** tables. This ambiguity is internally resolved, based on a “least number of tables” assessment. To be clear, you shouldn’t design models with this type of ambiguity—the issue will be addressed in part later in this lab, and by the completion of the **Create DAX Calculations in Power BI Desktop** lab.*
+	**Note**: The issue now relates to the fact that there are two possible filter propagation paths between the **Salesperson** and **Sales** tables. This ambiguity is internally resolved, based on a “least number of tables” assessment. To be clear, you shouldn’t design models with this type of ambiguity—the issue will be addressed in part later in this lab, and by the completion of the **Create DAX Calculations in Power BI Desktop** lab.
 
 14. Switch to Model view.
 
@@ -649,7 +657,7 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 	![Picture 5696](Linked_image_Files/pl-300-ex-4-task-2-step-17.png)
 
-	*The filter propagation will now follow the only active path.*
+	**Note**: The filter propagation will now follow the only active path.
 
 18. In the diagram, notice that the inactive relationship is represented by a dashed line.
 
@@ -661,17 +669,17 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 20. Notice also, that the sales for each salesperson—if added—would exceed the table total.
 
-	*It’s a common observation of a many-to-many relationship due to the double, triple, etc. counting of regional sales results. Consider Brian Welcker, the second salesperson listed. His sales amount equals the total sales amount. It’s the correct result simply due to the fact the he’s the Director of Sales; his sales are measured by the sales of all regions.*
+	**Note**: It’s a common observation of a many-to-many relationship due to the double, triple, etc. counting of regional sales results. Consider Brian Welcker, the second salesperson listed. His sales amount equals the total sales amount. It’s the correct result simply due to the fact the he’s the Director of Sales; his sales are measured by the sales of all regions.
 
-	*While the many-to-many relationship is now working, it’s now not possible to analyze sales made by a salesperson (because the relationship is inactive). You’ll be able to reactivate the relationship when you introduce a calculated table that will allow analyzing sales made in the sales region(s) assigned to the salesperson (for performance analysis) in the **Create DAX Calculations in Power BI Desktop** lab.*
+	**Note**: While the many-to-many relationship is now working, it’s now not possible to analyze sales made by a salesperson (because the relationship is inactive). You’ll be able to reactivate the relationship when you introduce a calculated table that will allow analyzing sales made in the sales region(s) assigned to the salesperson (for performance analysis) in the **Create DAX Calculations in Power BI Desktop** lab.
 
 21. Switch to Modeling view, and then in the diagram, select the **Salesperson** table.
 
 22. In the **Properties** pane, in the **Name** box, replace the text with **Salesperson (Performance)**.
 
-	*The renamed table now reflects its purpose: it’s used to report and analyze the performance of salespeople based on the sales of their assigned sales regions.*
+	**Note**: The renamed table now reflects its purpose: it’s used to report and analyze the performance of salespeople based on the sales of their assigned sales regions.
 
-### **Task 3: Relate the Targets table**
+### Task 3: Relate the Targets table
 
 In this task you will create a relationship to the **Targets** table
 
@@ -683,9 +691,9 @@ In this task you will create a relationship to the **Targets** table
 
 	![Picture 5699](Linked_image_Files/image-(19).png)
 
-	*It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic. You’ll follow the second approach by creating a target measure in the **Create Advanced DAX Calculations in Power BI Desktop** lab that’ll return BLANK when more than one salesperson is filtered.*
+	**Note**: It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic. You’ll follow the second approach by creating a target measure in the **Create Advanced DAX Calculations in Power BI Desktop** lab that’ll return BLANK when more than one salesperson is filtered.
 
-### **Task 4: Finish up**
+### Task 4: Finish up
 
 In this task you will complete the lab.
 
@@ -696,11 +704,12 @@ In this task you will complete the lab.
 3. If you intend to start the next lab, leave Power BI Desktop open.
 
 ### Review
- In this lab, you have completed the following :
+In this lab, you have completed the following :
+
 - Get started with Power BI Desktop
 - Create model relationships
 - Relate the Targets table
 
-**You have successfully completed the lab**
+## You have successfully completed the lab
 
 
