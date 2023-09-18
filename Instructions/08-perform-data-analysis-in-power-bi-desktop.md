@@ -72,7 +72,7 @@ In this task you will setup the environment for the lab by signing in to Power B
    * Password:  <inject key="Password"></inject>
 1. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
- 	*Important: Be sure to record your new password.*
+   **Important**: Be sure to record your new password.
 
 1. Complete the sign in process.
 
@@ -297,7 +297,7 @@ In this task you will complete the lab.
 4.  Close Power BI Desktop.
 
 ## Review
- In this lab, you have completed the following :
+In this lab, you have completed the following :
 - Create the Report
 - Create a Scatter Chart
 - Create a Forecast
