@@ -1,5 +1,7 @@
-# **PL-300 Module 9: Create a Power BI Dashboard**
+# PL-300 Module 9: Create a Power BI Dashboard
 
+## Lab scenario
+ 
 In this lab you will create the **Sales Monitoring** dashboard.
 
 In this lab you learn how to:
@@ -32,23 +34,28 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 10. Enforce Row-Level Security
 
- ## Estimated timing: 60 minutes    
+## Lab objectives
+In this lab, you will perform:
+- Pin visuals to a dashboard
+- Use Q&A to create dashboard tiles
+
+## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
 
 ![Picture 1](Linked_image_Files/Mod9-PL300.png)   
 
-## **Exercise 1: Create a Dashboard**
+## Exercise 1: Create a Dashboard
 
 In this exercise you will create the **Sales Monitoring** dashboard. The completed dashboard will look like the following:
 
 ![Image of the completed dashboard, comprising three tiles.](Linked_image_Files/module9.1.png)
 
-### **Task 1: Get started – Sign in**
+### Task 1: Get started – Sign in
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-*Important: If you have already signed in to Power BI in a previous lab, continue from the next task.*
+**Important**: If you have already signed in to Power BI in a previous lab, continue from the next task.
 
 1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
 
@@ -75,7 +82,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 5. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
-    *Important: Be sure to record your new password.*
+    **Important**: Be sure to record your new password.
 
 6. Complete the sign in process.
 
@@ -91,7 +98,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 In this task you will setup the environment for the lab by opening the starter report.
 
-*Important: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.*
+**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -129,7 +136,7 @@ In this task you will setup the environment for the lab by opening the starter r
 
 12. Notice the yellow warning message beneath the ribbon.
 
-	*The message alerts you to the fact that the queries have not been applied to load as model tables.*
+    >**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
 
 13. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
@@ -139,13 +146,9 @@ In this task you will setup the environment for the lab by opening the starter r
 
 	![Picture 8](Linked_image_Files/discard-changes-2.png)
 
-
-
 15. If prompted to apply changes, click **Apply Later**.
 
 	![Picture 22](Linked_image_Files/module09-image15.png)
-
-
 
 16. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
 
@@ -170,23 +173,23 @@ In this task you will setup the environment for the lab by opening the starter r
     - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 3: Get started – Publish the report**
+### Task 3: Get started – Publish the report
 
 In this task you will setup the environment for the lab by creating a dataset.
 
-*Important: If you have already published the report in the **Design a Report in Power BI Desktop, Part 2** lab, continue from the next task.*
+**Important**: If you have already published the report in the **Design a Report in Power BI Desktop, Part 2** lab, continue from the next task.
 
 1. In the Microsoft Edge browser window, in the Power BI service, navigate to My Workspace.
     
 1. Select **Upload > Browse**.
 
-4. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\09-create-power-bi-dashboard\Starter** folder.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\09-create-power-bi-dashboard\Starter** folder.
 
-5. Select the **Sales Analysis.pbix** file, and then click **Open**.
+1. Select the **Sales Analysis.pbix** file, and then click **Open**.
 
-6. If prompted to replace the dataset, click **Replace it**.
+1. If prompted to replace the dataset, click **Replace it**.
 
-### **Task 4: Create a dashboard**
+### Task 4: Create a dashboard
 
 In this task you will create the **Sales Monitoring** dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&A to create a tile.
 
@@ -198,7 +201,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
 3. Set the **Region** slicer to **Select All**.
 
-    *When pinning visuals to a dashboard, they will use the current filter context. Once pinned, the filter context cannot be changed. For time-based filters, it’s a better idea to use a relative date slicer (or, Q&A using a relative time-based question).*
+    >**Note**: When pinning visuals to a dashboard, they will use the current filter context. Once pinned, the filter context cannot be changed. For time-based filters, it’s a better idea to use a relative date slicer (or, Q&A using a relative time-based question).
 
 4. To create a dashboard and pin a visual, hover the cursor over the S**ales and Profit Margin by Month** (column/line) visual, and select the **pushpin**.
 
@@ -224,7 +227,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
     ![Picture 7](Linked_image_Files/module-09query2.png)
 
-    *You can use the Q&A feature to ask a question, and Power BI will respond will a visual.*
+    >**Note**: You can use the Q&A feature to ask a question, and Power BI will respond will a visual.
 
 11. Click any one of the suggested questions beneath the Q&A box, in the boxes.
 
@@ -240,7 +243,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
     ![Picture 14](Linked_image_Files/blank.png)
 
-    *You may recall you added the **Sales YTD** measure in the **Create DAX Calculations in Power BI Desktop, Part 2** lab. This measure is a Time Intelligence expression and it so requires a filter on the **Date** table to produce a result.*
+    >**Note**: You may recall you added the **Sales YTD** measure in the **Create DAX Calculations in Power BI Desktop, Part 2** lab. This measure is a Time Intelligence expression and it so requires a filter on the **Date** table to produce a result.
 
 16. Extend the question with: **in year FY2020**.
 
@@ -268,7 +271,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
     ![Picture 46](Linked_image_Files/module19image20.png)
 
-    *Using this technique to add a dashboard tile lets you embellish your dashboard with media, including web content, images, richly-formatted text boxes, and video (using YouTube or Vimeo links).*
+    >**Note**: Using this technique to add a dashboard tile lets you embellish your dashboard with media, including web content, images, richly-formatted text boxes, and video (using YouTube or Vimeo links).
 
 23. In the **Add a Tile** pane (located at the right), select the **Image** tile.
 
@@ -280,7 +283,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
 25. In the **Add Image Tile** pane, in the **URL** box, enter the complete URL found in the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** file.
 
-    *You can embed an image by using its URL, or you can use a data URL, which embeds content inline.*
+    >**Note**: You can embed an image by using its URL, or you can use a data URL, which embeds content inline.
 
 26. At the bottom of the pane, click **Apply**.
 
@@ -288,7 +291,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
 27. To resize the logo tile, drag the bottom-right corner, and resize the tile to become one unit wide, and two units high.
 
-    *Tile sizes are constrained into a rectangular shape. It’s only possible to resize into multiples of the rectangular shape.*
+    >**Note**: Tile sizes are constrained into a rectangular shape. It’s only possible to resize into multiples of the rectangular shape.
 
 28. Organize the tiles so that the logo appears at the top-left, with the **Sales YTD** tile beneath it, and the **Sales, Profit Margin** tile at the right.
 
@@ -301,7 +304,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
     - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### **Task 5: Edit tile details**
+### Task 5: Edit tile details
 
 In this task you will edit the details of two tiles.
 
@@ -334,13 +337,13 @@ In this task you will edit the details of two tiles.
 8. Notice that the tile describes the last refresh time (which done when loading the data model in Power BI Desktop).
 
 
-   > *You’ll refresh the dataset in the next exercise. Typically, this would be achieved by using scheduled refresh, in which case Power BI would use a gateway to connect to the SQL Server database. However, due to constraints in the classroom setup, there is no gateway. So, you’ll open Power BI Desktop, perform a manual data refresh, and then upload the file to your workspace.*
+   >**Note**: *You’ll refresh the dataset in the next exercise. Typically, this would be achieved by using scheduled refresh, in which case Power BI would use a gateway to connect to the SQL Server database. However, due to constraints in the classroom setup, there is no gateway. So, you’ll open Power BI Desktop, perform a manual data refresh, and then upload the file to your workspace.
 
-## **Exercise 2: Refresh the Dataset**
+## Exercise 2: Refresh the Dataset
 
 In this exercise you will first load sales order data for June 2020 into the **AdventureWorksDW2020** database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
 
-### **Task 1: Update the lab database**
+### Task 1: Update the lab database
 
 In this task you will run a PowerShell script to update data in the **AdventureWorksDW2020** database.
 
@@ -352,7 +355,7 @@ In this task you will run a PowerShell script to update data in the **AdventureW
 
 3. When prompted to press any key to close, press **Enter** again.
 
-    *The **AdventureWorksDW2020** database now includes sales orders made in June 2020.*
+    >**Note**: The **AdventureWorksDW2020** database now includes sales orders made in June 2020.
 
 ### **Task 2: Refresh the Power BI Desktop file**
 
@@ -372,7 +375,7 @@ In this task you will open the **Sales Analysis** Power BI Desktop file, perform
 
     ![Picture 31](Linked_image_Files/module09.29.png)
 
-    *The dataset in the Power BI service now has June 2020 sales data.*
+    >**Note**: The dataset in the Power BI service now has June 2020 sales data.
 
 5. Close Power BI Desktop.
 
@@ -390,14 +393,14 @@ In this task you will review the dashboard to notice updated sales.
 
 3. Notice also that there is now a column for **2020 Jun**.
 
-    *If you don’t see the June 2020 data, you might need to press **F5** to reload the web browser.*
+    >**Note**: If you don’t see the June 2020 data, you might need to press **F5** to reload the web browser.
 
     ![Picture 33](Linked_image_Files/module9.30.png)
 
-### Review
+## Review
  In this lab, you have completed the following :
 - Create a Dashboard
 - Refresh the Dataset
 - Review the Dashboard
 
-**You have successfully completed the lab**
+## You have successfully completed the lab
