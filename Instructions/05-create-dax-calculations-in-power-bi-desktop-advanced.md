@@ -36,6 +36,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## Lab objectives
 In this lab, you will perform:
+
 - Use the CALCULATE() function to manipulate filter context
 - Use Time Intelligence functions
 
@@ -407,8 +408,8 @@ In this task you will complete the lab.
 	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Review
-  
- In this lab, you have completed the following:
+In this lab, you have completed the following:
+
  - Measures with DAX expressions involving filter context manipulation 
  - Created a sales year-to-date (YTD) measure and sales year-over-year (YoY) growth measure
 
