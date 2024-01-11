@@ -117,9 +117,9 @@ In this task you will setup the environment for the lab.
 
 In this task you will create a matrix visual to support testing your new measures.
 
-1. In Power BI Desktop, in Report view, create a new report page.
+1. In Power BI Desktop, in Report view, create a new report page by clicking on the plus '+' sign at the bottom left. 
 
-    ![Picture 1](images/save.png)
+    ![](images/L5E1T2S1.png)
 
 2. On **Page 3**, add a matrix visual.
 
@@ -127,7 +127,7 @@ In this task you will create a matrix visual to support testing your new measure
 
 3. Resize the matrix visual to fill the entire page.
 
-4. To configure the matrix visual fields, from the **Fields** pane, drag the **Region \| Regions** hierarchy, and drop it inside the visual.
+4. To configure the matrix visual fields, from the **Data** pane, drag the **Region \| Regions** hierarchy, and drop it inside the visual.
 
     >**Note**: The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region \| Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.
 
@@ -141,7 +141,7 @@ In this task you will create a matrix visual to support testing your new measure
 
 7. To format the visual, in the **Visualizations** pane, select the **Format** pane.
 
-    ![Picture 14](Linked_image_Files/lab-05-PL-300.png)
+    ![](images/format_visual.png)
 
 8. In the **Search** box, enter **Stepped**.
 
@@ -185,7 +185,7 @@ In this task you will create several measures with DAX expressions that use the 
 
     >**Note**: The new measure is yet to deliver a useful result. When the sales for a group, country, or region is divided by this value it will produce a useful ratio known as “percent of grand total”.
 
-4. In the **Fields** pane, ensure that the **Sales All Region** measure is selected (when selected, it will have a dark gray background), and then in the formula bar, replace the measure name and formula with the following formula:
+4. In the **Data** pane, ensure that the **Sales All Region** measure is selected (when selected, it will have a dark gray background), and then in the formula bar, replace the measure name and formula with the following formula:
 
     **Tip**: To replace the existing formula, first copy the snippet. Then, click inside the formula bar and press **Ctrl+A** to select all text. Then, press **Ctrl+V** to paste the snippet to overwrite the selected text. Then press **Enter**.
 
@@ -395,8 +395,6 @@ In this task you will complete the lab.
 4. On the remaining page, to clear the page, select the table visual, and the press the **Delete** key.
 
 5. Save the Power BI Desktop file.
-
-6. If you intend to start the next lab, leave Power BI Desktop open.
 
     >**Note**: You’ll create a report based on the data model in the **Design a Report in Power BI Desktop, Part 1** lab.
 
