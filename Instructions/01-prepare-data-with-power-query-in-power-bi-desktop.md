@@ -325,10 +325,6 @@ In this task you will complete the lab.
 
 	> **Note**: Applying the queries will load their data to the data model. You’re not ready to do that, as there are many transformations that must be applied first.
 
-4. If you intend to start the next lab, leave Power BI Desktop open.
-
-	> **Note**: You’ll apply various transformations to the queries and then apply the queries to load them to the data model in the **Load Data in Power BI Desktop** lab.
-
 ### Review
  In this lab, you have completed the following :
 - Get started with Power BI Desktop
