@@ -57,13 +57,11 @@ In this exercise you will create model relationships.
 
 In this task you will setup the environment for the lab.
 
-**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
-
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
     ![Picture 12](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image1.png)
 
-1. To close the getting started window, at the top-left of the window, click **X**.
+1. To close the getting started window, at the top-right of the window, click **X**.
 
  	![Picture 11](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image2.png)
 	
@@ -71,7 +69,7 @@ In this task you will setup the environment for the lab.
 
 	![Picture 8](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image6.png)
 	
-1. Complete the sign in process using the same account used to sign in to the Azure portal.
+1. Select work or school account. Complete the sign in process using the same account used to sign in to the Azure portal.
 
 1. Enter the Lab username in **Enter your email address** page.
     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
@@ -176,17 +174,17 @@ In this task you will create model relationships.
 
 	![Picture 327](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(10).png)
 
-4. To view all table fields, in the **Fields** pane, right-click an empty area, and then select **Expand All**.
+4. To view all table fields, in the **Data** pane, right-click an empty area, and then select **Expand All**.
 
 	![Picture 328](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(11).png)
 
-5. To create a table visual, in the **Fields** pane, from inside the **Product** table, check the **Category** field.
+5. To create a table visual, in the **Data** pane, from inside the **Product** table, check the **Category** field.
 
 	![Picture 329](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(12).png)
 
 	**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.
 
-6. To add an additional column to the table, in the **Fields** pane, check the **Sales \| Sales** field.
+6. To add an additional column to the table, in the **Data** pane, check the **Sales \| Sales** field.
 
 7. Notice that the table visual lists four product categories, and that the sales value is the same for each, and the same for the total.
 
@@ -281,13 +279,13 @@ In this exercise you will configure each table by creating hierarchies, and hidi
 
 In this task you will configure the **Product** table.
 
-1. In Model view, in the **Fields** pane, if necessary, expand the **Product** table to reveal all fields.
+1. In Model view, in the **Data** pane, if necessary, expand the **Product** table to reveal all fields.
 
-2. To create a hierarchy, in the **Fields** pane, right-click the **Category** column, and then select **Create Hierarchy**.
+2. To create a hierarchy, in the **Data** pane, right-click the **Category** column, and then select **Create Hierarchy**.
 
 	![Picture 341](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(24).png)
 
-3. In the **Properties** pane (to the left of the **Fields** pane), in the **Name** box, replace the text with **Products**.
+3. In the **Properties** pane (to the left of the **Data** pane), in the **Name** box, replace the text with **Products**.
 
 	![Picture 344](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(25).png)
 
@@ -301,7 +299,7 @@ In this task you will configure the **Product** table.
 
 	**Tip**: Don’t forget to click **Apply Level Changes**—it’s a common mistake to overlook this step.
 
-7. In the **Fields** pane, notice the **Products** hierarchy.
+7. In the **Data** pane, notice the **Products** hierarchy.
 
 	![Picture 347](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(27).png)
 
@@ -309,7 +307,7 @@ In this task you will configure the **Product** table.
 
 	![Picture 346](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(28).png)
 
-9. To organize columns into a display folder, in the **Fields** pane, first select the **Background Color Format** column.
+9. To organize columns into a display folder, in the **Data** pane, first select the **Background Color Format** column.
 
 10. While pressing the **Ctrl** key, select the **Font Color Format** column.
 
@@ -317,7 +315,7 @@ In this task you will configure the **Product** table.
 
 	![Picture 348](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(29).png)
 
-12. In the **Fields** pane, notice that the two columns are now inside a folder.
+12. In the **Data** pane, notice that the two columns are now inside a folder.
 
 	![Picture 349](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(30).png)
 
@@ -402,7 +400,7 @@ In this task you will configure the **Sales** table.
 
 In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
-1. In the **Fields** pane, select the **Product \| ProductKey** column.
+1. In the **Data** pane, select the **Product \| ProductKey** column.
 
 2. While pressing the **Ctrl** key, select the following 13 columns (spanning multiple tables):
 
@@ -462,7 +460,7 @@ In this task you will switch to Report view, and review the model interface.
 
 1. Switch to Report view.
 
-2. In the **Fields** pane, notice the following:
+2. In the **Data** pane, notice the following:
 
 	- Columns, hierarchies and their levels are fields, which can be used to configure report visuals
 
@@ -502,7 +500,7 @@ In this task you will switch to Report view, and review the model interface.
 
 	![Picture 9](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(44).png)
 
-9. In the **Fields** pane, notice that the date hierarchies are no longer available.
+9. In the **Data** pane, notice that the date hierarchies are no longer available.
 
 	![Picture 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(45).png)
 
@@ -515,7 +513,7 @@ In this exercise you will create two quick measures.
 
 In this task you will create two quick measures to calculate profit and profit margin.
 
-1. In the **Fields** pane, right-click the **Sales** table, and then select **New Quick Measure**.
+1. In the **Data** pane, right-click the **Sales** table, and then select **New Quick Measure**.
 
 	![Picture 366](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(46).png)
 
@@ -523,7 +521,7 @@ In this task you will create two quick measures to calculate profit and profit m
 
 	![Picture 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(47).png)
 
-3. In the **Fields** pane of the **Quick Measures** window, expand the **Sales** table.
+3. In the **Data** pane of the **Quick Measures** window, expand the **Sales** table.
 
 4. Drag the **Sales** field into the **Base Value** box.
 
@@ -533,7 +531,7 @@ In this task you will create two quick measures to calculate profit and profit m
 
 6. Click **OK**.
 
-	![Picture 369](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(49).png)
+	![Picture 369](Linked_image_Files/E4T1S6.png)
 
 	**Note**: A quick measure creates the calculation formula for you. They’re easy and fast to create for simple and common calculations. You’ll create measures without using this tool in the **Create DAX Calculations in Power BI Desktop** lab.
 
@@ -587,7 +585,7 @@ In this task you will create two quick measures to calculate profit and profit m
 
 In this task you will create a many-to-many relationship between the **Salesperson** table and the **Sales** table.
 
-1. In Power BI Desktop, in Report view, in the **Fields** pane, check the follow two fields to create a table visual:
+1. In Power BI Desktop, in Report view, in the **Data** pane, check the follow two fields to create a table visual:
 
 	- Salesperson \| Salesperson
 
@@ -700,8 +698,6 @@ In this task you will complete the lab.
 1. Save the Power BI Desktop file.
 
 2. If prompted to apply queries, click **Apply Later**.
-
-3. If you intend to start the next lab, leave Power BI Desktop open.
 
 ### Review
 In this lab, you have completed the following :
