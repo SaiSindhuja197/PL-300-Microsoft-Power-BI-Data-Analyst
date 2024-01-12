@@ -52,9 +52,7 @@ In this exercise you will apply transformations to each of the queries created i
 
 In this task you will setup the environment for the lab.
 
-**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
-
-1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
+1. To open the Power BI Desktop, click the Microsoft Power BI Desktop shortcut.
 
     ![Picture 8](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
@@ -770,16 +768,12 @@ In this task you will complete the lab.
 
 	>**Note**: All load-enabled queries are now loaded to the data model.
 
-3. In the **Fields** pane (located at the right), notice the seven tables loaded to the data model.
+3. In the **Data** pane (located at the right), notice the seven tables loaded to the data model.
 
 	![Picture 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 4. Save the Power BI Desktop file.
-
-5. If you intend to start the next lab, leave Power BI Desktop open.
-
-	>**Note**: You’ll configure data model tables and relationships in the **Model Data in Power BI Desktop** lab.
-
+   
 ### Review
 In this lab, you have completed:
 
