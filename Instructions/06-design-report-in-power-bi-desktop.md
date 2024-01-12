@@ -53,8 +53,6 @@ In this exercise you will create a three-page report named **Sales Report**.
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-**Important**: If you have already signed in to Power BI, continue from the next task.
-
 1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
 
  	![Picture 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
@@ -134,7 +132,7 @@ In this task you will setup the environment for the lab by opening the starter r
 
    ![](Linked_image_Files/powerbi.png)
 
-2. To close the getting started window, at the top-left of the window, click **X**.
+2. To close the getting started window, at the top-right of the window, click **X**.
 
 	![Picture 47](Linked_image_Files/close.png)
 
@@ -142,7 +140,7 @@ In this task you will setup the environment for the lab by opening the starter r
 
 	![Picture 66](Linked_image_Files/07-design-report-in-power-bi-desktop_image5.png)
 
-4. Complete the sign in process using the same account used to sign in to the Power BI service.
+4. Complete the sign in process using the same account used to sign in to the Power BI service. (**Note:** Select Work or school account if asked, and complete the sign in process)
 
 5. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
 
@@ -224,7 +222,7 @@ In this task you will design the first report page. When you’ve completed the 
 	![Picture 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
 
 1. To add a slicer, first de-select the image by clicking an empty area of the report page.
-1. In the **Fields** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
+1. In the **Data** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
 	
 	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.
 
@@ -273,7 +271,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 	- Sales \| Sales
 
-1. In the visual fields pane (not the **Fields** pane—the visual fields pane is located beneath the **Visualizations** pane), notice that the fields are assigned to the **X-axis** and **Column y-axis** wells/areas.
+1. In the visual fields pane (located beneath the **Visualizations** pane), notice that the fields are assigned to the **X-axis** and **Column y-axis** wells/areas.
 
 	![Picture 27](Linked_image_Files/image(28).png)
 
@@ -295,9 +293,9 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. De-select the chart by clicking an empty area of the report page.
 
-1. To add a chart to the page, in the **Visualizations** pane, click the **Map** visual type.
+1. To add a chart to the page, in the **Visualizations** pane, click the **Stacked column chart** visual type.
 
-	![Picture 53](Linked_image_Files/image(31).png)
+	![Picture 53](Linked_image_Files/E1T4S27.png)
 
 1. Resize and position the visual so it sits beneath the column/line chart, and so it fills half the width of the chart above.
 
@@ -305,11 +303,11 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. Add the following fields to the visual wells/areas:
 
-	- Location: **Region \| Country**
+	- X-axis: **Region \| Country**
+
+	- Y-axis: **Sales \| Sales**
 
 	- Legend: **Product \| Category**
-
-	- Size: **Sales \| Sales**
 
 1. De-select the chart by clicking an empty area of the report page.
 
@@ -563,7 +561,7 @@ In this task you will explore the report that was published to Power BI.
 
 11. To undo the cross filter, in the column/line chart, click an empty area of the visual.
 
-12. Hover the cursor over the map visual, and then at the top-right, click the **Focus mode** icon.
+12. Hover the cursor over the Stacked column visual, and then at the top-right, click the **Focus mode** icon.
 
 	![Picture 96](images/M6-Ex2-T2-S12.png)
 
@@ -575,39 +573,35 @@ In this task you will explore the report that was published to Power BI.
 
 	![Picture 86](Linked_image_Files/image(66).png)
 
-15. Hover the cursor over the map visual again, and then at the top-right, click the ellipsis (…), and then notice the menu options.
+15. Try out each of the options, except **Chat in Teams**.
 
-	![Picture 97](images/M6-Ex2-T2-S15.png)
-
-16. Try out each of the options, except **Chat in Teams**.
-
-17. At the left, in the **Pages** pane, select the **Profit** page.
+16. At the left, in the **Pages** pane, select the **Profit** page.
 
 	![Picture 84](Linked_image_Files/image(68).png)
 
-18. Notice that the **Region** slicer has a different selection to the **Region** slicer on the **Overview** page.
+17. Notice that the **Region** slicer has a different selection to the **Region** slicer on the **Overview** page.
 
 	>**Note**: The slicers are not synchronized. You’ll modify the report design to ensure they sync between pages in the **Enhance a Report in Power BI Desktop** lab.
 
-19. In the **Filters** pane (located at the right), expand a filter card, and apply some filters.
+18. In the **Filters** pane (located at the right), expand a filter card, and apply some filters.
 
 	>**Note**: The **Filters** pane allows you to define more filters than could possibly fit on a page as slicers.
 
-20. In the matrix visual, use the plus (+) button to drill into the **Fiscal** hierarchy.
+19. In the matrix visual, use the plus (+) button to drill into the **Fiscal** hierarchy.
 
-21. Select the **My Performance** page.
+20. Select the **My Performance** page.
 
 	![Picture 89](Linked_image_Files/image(69).png)
 
-22. At the top-right on the menu bar, click **View**, and then select **Full Screen**.
+21. At the top-right on the menu bar, click **View**, and then select **Full Screen**.
 
 	![Picture 98](Linked_image_Files/image(70).png)
 
-23. Interact with the page by modifying the slicer, and cross filtering the page.
+22. Interact with the page by modifying the slicer, and cross filtering the page.
 
-24. At the bottom of the window, notice the commands to change page, navigate backwards or forwards between pages, or to exit full screen mode.
+23. At the bottom of the window, notice the commands to change page, navigate backwards or forwards between pages, or to exit full screen mode.
 
-25. Click the left icon to exit full screen mode.
+24. Click the left icon to exit full screen mode.
 
     ![Picture 91](Linked_image_Files/image(71).png)
 
