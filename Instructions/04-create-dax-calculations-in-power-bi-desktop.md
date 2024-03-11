@@ -449,7 +449,7 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	- Assign to a display folder named **Pricing**
 
-       ![Picture 33](Linked_image_Files/upd-8.png)
+       ![Picture 33](Linked_image_Files/L4E2T1S11.png)
         
 
 12. Hide the **Unit Price** column.
@@ -462,7 +462,7 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	- Assign to a display folder named **Counts**
 
-	![Picture 36](Linked_image_Files/upd-9.png)
+	![Picture 36](Linked_image_Files/L4E2T1S13.png)
 
 14. In Report view, in the **Values** well/area of the matrix visual, for the **Unit Price** field, click **X** to remove it.
 
@@ -553,7 +553,7 @@ In this task you will create additional measures that use more complex formulas.
 
 15. Resize the table visual so all columns and rows can be seen.
 
-	![Picture 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
+	![Picture 44](Linked_image_Files/L4E2T2S14.png)
 
 	>**Note**: While it appears all salespeople are not meeting target, remember that the table visual isn’t yet filtered by a specific time period. You’ll produce sales performance reports that filter by a user-selected time period in the **Design a Report in Power BI Desktop, Part 1** lab.
 
